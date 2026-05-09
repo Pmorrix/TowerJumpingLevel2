@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/points.uss?fileID=7433441132597879392&amp;guid=d7a9c9bca769b184ea3eb7b8f96c786d&amp;type=3#points" />
+    <ui:IMGUIContainer data-source-type="AiToolbox.Moderation+&lt;&lt;Request&gt;g__QuickRequestCoroutine|0_0&gt;d, AiToolbox" data-source-path="text" />
+    <uie:TagField label="PLAYER" value="Player" name="player" style="-unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Examples%20&amp;%20Extras/Fonts/Oswald-Bold.ttf?fileID=12800000&amp;guid=c9f6d0e7bc8541498c9a4799ba184ede&amp;type=3#Oswald-Bold&quot;); cursor: url(&quot;project://database/Assets/AI%20Toolbox/Samples/Runtime%20Usage/Shared%20Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=4154780841294389669&amp;guid=3d4d8e05591524d47b7f6d53a08998a3&amp;type=3#arrow-down&quot;);" />
+</ui:UXML>

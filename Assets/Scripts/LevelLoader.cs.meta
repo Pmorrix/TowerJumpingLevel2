@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 1eaac8156c252c648aeb2b8456dc4845
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - scoreManager: {instanceID: 0}
+  - livesDisplay: {instanceID: 0}
+  - player: {instanceID: 0}
+  - bonusGo: {instanceID: 0}
+  - bonusTotalPanel: {instanceID: 0}
+  - sellPanel: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
