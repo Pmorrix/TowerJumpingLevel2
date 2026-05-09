@@ -26,6 +26,8 @@ public class Scene2Initializer : MonoBehaviour
                 return 2;
             case GameSession.Level3SceneName:
                 return 3;
+            case GameSession.Level4SceneName:
+                return 4;
             default:
                 return GameSession.FirstCampaignLevel;
         }

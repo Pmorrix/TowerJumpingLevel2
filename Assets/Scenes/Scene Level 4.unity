@@ -17768,6 +17768,24 @@ MonoBehaviour:
   sfxSource: {fileID: 0}
   highScoreAppearClip: {fileID: 8300000, guid: a65e44e8c694a3a4891eef0db109e331, type: 3}
   highScoreAppearVolume: 1
+--- !u!114 &1014101652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014101660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e71f4c441f4bb4a83f0a7c147e80d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: 2.2
+  speed: 2
+  startMovingToCenter: 1
+  stopWhenColliderDisabled: 1
+  carryPlayer: 1
+  topContactTolerance: 0.15
 --- !u!1 &1014101660
 GameObject:
   m_ObjectHideFlags: 0
@@ -17783,6 +17801,7 @@ GameObject:
   - component: {fileID: 1014101664}
   - component: {fileID: 1014101663}
   - component: {fileID: 1014101662}
+  - component: {fileID: 1014101652}
   m_Layer: 6
   m_Name: Building7 (2)
   m_TagString: Untagged
@@ -18543,7 +18562,7 @@ Transform:
   m_GameObject: {fileID: 1074959034}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.71, z: 0}
+  m_LocalPosition: {x: -0.34, y: -0.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -42519,14 +42538,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newGoalBuilding: {fileID: 1960587231}
   goalEnableTime: 1
-  startValue: 1450
-  decayPerSecond: 10
+  startValue: 2000
+  decayPerSecond: 30
   timeTxt: {fileID: 1436509235}
   levelCompletePanelRoot: {fileID: 176608650}
   nextLevelPanelUI: {fileID: 176608656}
   scoreManager: {fileID: 761180322}
   playerLanding: {fileID: 227906089}
-  levelBonus: 1700
+  levelBonus: 2000
   visualTimeToScoreTransfer: 1
   timeRemainingScoreMultiplier: 1
   transferStep: 20
@@ -50117,6 +50136,24 @@ Transform:
   - {fileID: 8997360420761227}
   m_Father: {fileID: 351263283}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5861487244637412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8187757284036030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e71f4c441f4bb4a83f0a7c147e80d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centerX: -2.2
+  speed: 2
+  startMovingToCenter: 1
+  stopWhenColliderDisabled: 1
+  carryPlayer: 1
+  topContactTolerance: 0.15
 --- !u!114 &5861487244637420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50437,6 +50474,7 @@ GameObject:
   - component: {fileID: 4526927562795416}
   - component: {fileID: 7404946824467546}
   - component: {fileID: 5861487244637420}
+  - component: {fileID: 5861487244637412}
   m_Layer: 6
   m_Name: Building8
   m_TagString: Untagged

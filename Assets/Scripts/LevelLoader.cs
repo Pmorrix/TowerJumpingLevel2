@@ -97,10 +97,24 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadSellPanel()
     {
-        if (sellPanel != null)
-            sellPanel.SetActive(true);
+        LoadLevel4AfterBonus();
+    }
 
-        if (player != null)
-            player.SetActive(false);
+    public void LoadLevel4AfterBonus()
+    {
+        Time.timeScale = 1f;
+        ScoreManager.SetCanAddScore(false);
+
+        if (scoreManager == null)
+            scoreManager = FindAnyObjectByType<ScoreManager>();
+
+        if (livesDisplay == null)
+            livesDisplay = FindAnyObjectByType<LivesTextDisplay>();
+
+        int score = scoreManager != null ? scoreManager.Score : GameSession.CurrentScore;
+        int lives = livesDisplay != null ? livesDisplay.CurrentLives : GameSession.CurrentLives;
+
+        GameSession.SetProgress(score, lives, GameSession.FinalCampaignLevel);
+        SceneManager.LoadScene(GameSession.Level4SceneName);
     }
 }

@@ -8,6 +8,12 @@ public class GoToNextLevel : MonoBehaviour
 
     public static int ResolveNextLevel(int currentLevel)
     {
+        if (currentLevel < GameSession.BonusAfterLevel)
+            return currentLevel + 1;
+
+        if (currentLevel == GameSession.BonusAfterLevel)
+            return 0;
+
         if (currentLevel < GameSession.FinalCampaignLevel)
             return currentLevel + 1;
 
@@ -20,7 +26,7 @@ public class GoToNextLevel : MonoBehaviour
         if (nextLevel > 0)
             return GameSession.GetSceneNameForLevel(nextLevel);
 
-        if (currentLevel >= GameSession.FinalCampaignLevel)
+        if (currentLevel == GameSession.BonusAfterLevel)
             return GameSession.BonusSceneName;
 
         return GameSession.MenuSceneName;
@@ -47,9 +53,9 @@ public class GoToNextLevel : MonoBehaviour
             return;
         }
 
-        if (GameSession.CurrentLevel >= GameSession.FinalCampaignLevel)
+        if (GameSession.CurrentLevel == GameSession.BonusAfterLevel)
         {
-            GameSession.SetProgress(score, lives, GameSession.FinalCampaignLevel);
+            GameSession.SetProgress(score, lives, GameSession.BonusAfterLevel);
             SceneManager.LoadScene(GameSession.BonusSceneName);
             return;
         }

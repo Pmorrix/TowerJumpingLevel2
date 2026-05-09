@@ -5,12 +5,14 @@ public static class GameSession
     public const int DefaultScore = 0;
     public const int DefaultLives = 3;
     public const int FirstCampaignLevel = 1;
-    public const int FinalCampaignLevel = 3;
+    public const int BonusAfterLevel = 3;
+    public const int FinalCampaignLevel = 4;
 
     public const string MenuSceneName = "Menu";
     public const string Level1SceneName = "Scene Level 1";
     public const string Level2SceneName = "Scene Level 2";
     public const string Level3SceneName = "Scene Level 3";
+    public const string Level4SceneName = "Scene Level 4";
     public const string BonusSceneName = "Scene Bonus 1";
 
     public static int CurrentScore { get; private set; } = DefaultScore;
@@ -81,6 +83,8 @@ public static class GameSession
                 return Level2SceneName;
             case 3:
                 return Level3SceneName;
+            case 4:
+                return Level4SceneName;
             default:
                 return Level1SceneName;
         }
