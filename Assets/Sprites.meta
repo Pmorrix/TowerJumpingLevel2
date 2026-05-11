@@ -1,5 +1,8 @@
 fileFormatVersion: 2
-guid: f0ab7fea42b1a174e988a11637c4c904
+guid: 7b579a37323651849a7a6bef025c6e4e
+labels:
+- Terrain
+folderAsset: yes
 DefaultImporter:
   externalObjects: {}
   userData: 
