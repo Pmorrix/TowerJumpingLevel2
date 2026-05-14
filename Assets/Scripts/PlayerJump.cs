@@ -130,6 +130,17 @@ public class PlayerJump : MonoBehaviour
         return true;
     }
 
+    public void MobileJumpDown()
+    {
+        _jumpHeld = true;
+        TryJump();
+    }
+
+    public void MobileJumpUp()
+    {
+        _jumpHeld = false;
+    }
+
     // ─────────────────────────────────────────────
     // API booster 0/1
     // ─────────────────────────────────────────────

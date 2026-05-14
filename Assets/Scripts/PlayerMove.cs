@@ -27,6 +27,8 @@ public class PlayerMove : MonoBehaviour
     private float _targetLaneZ;
     // private float _zSmoothVelocity;
     private float _xInput;
+    private float _mobileHorizontalRaw;
+    private bool _hasMobileHorizontalInput;
 
     private void Awake()
     {
@@ -46,7 +48,9 @@ public class PlayerMove : MonoBehaviour
     private void Update()
     {
         // Input horizontal (X)
-        _xInput = -Input.GetAxisRaw("Horizontal");
+        _xInput = _hasMobileHorizontalInput
+            ? _mobileHorizontalRaw
+            : -Input.GetAxisRaw("Horizontal");
 
         // Cambio de carril por pulsación
         if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -54,6 +58,34 @@ public class PlayerMove : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
             ChangeLane(+1);
+    }
+
+    public void MobileMoveLeft()
+    {
+        _mobileHorizontalRaw = 1f;
+        _hasMobileHorizontalInput = true;
+    }
+
+    public void MobileMoveRight()
+    {
+        _mobileHorizontalRaw = -1f;
+        _hasMobileHorizontalInput = true;
+    }
+
+    public void MobileStopHorizontal()
+    {
+        _mobileHorizontalRaw = 0f;
+        _hasMobileHorizontalInput = false;
+    }
+
+    public void MobileLaneForward()
+    {
+        ChangeLane(-1);
+    }
+
+    public void MobileLaneBack()
+    {
+        ChangeLane(+1);
     }
 
     private void FixedUpdate()

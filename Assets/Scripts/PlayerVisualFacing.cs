@@ -64,6 +64,29 @@ public class PlayerVisualFacing : MonoBehaviour
         ApplyRotation(_currentY);
     }
 
+    public void FaceLeft()
+    {
+        _currentY = leftY;
+        ApplyRotation(_currentY);
+    }
+
+    public void FaceRight()
+    {
+        _currentY = rightY;
+        ApplyRotation(_currentY);
+    }
+
+    public void FaceForward()
+    {
+        _currentY = frontY;
+        ApplyRotation(_currentY);
+    }
+
+    public void FaceBack()
+    {
+        _currentY = backY;
+        ApplyRotation(_currentY);
+    }
     private void ApplyRotation(float yAngle)
     {
         if (visualRoot == null)
