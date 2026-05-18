@@ -1934,6 +1934,18 @@ MonoBehaviour:
   entryPunchScale: 0.1
   entryPunchUpDuration: 0.06
   entryPunchDownDuration: 0.1
+  sfxSource: {fileID: 0}
+  titleAppearClip: {fileID: 0}
+  scoreAppearClip: {fileID: 0}
+  bonusAppearClip: {fileID: 0}
+  totalAppearClip: {fileID: 0}
+  totalTickClip: {fileID: 0}
+  totalFinalClip: {fileID: 0}
+  appearVolume: 0.8
+  tickVolume: 0.35
+  finalVolume: 1
+  tickSoundEverySteps: 2
+  stopMusicWhileShown: 1
 --- !u!114 &176608657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2361,6 +2373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 991055d364272354d946dda727487c74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  comboRoot: {fileID: 0}
   comboTxt: {fileID: 1194929663}
   showDuration: 1.2
 --- !u!82 &227906083
@@ -2478,15 +2491,20 @@ MonoBehaviour:
   minUpNormal: 0.001
   boostersManager: {fileID: 2000611761}
   playerJump: {fileID: 227906077}
+  grantPlayerBoosterOnBuildingBooster: 1
   scoreManager: {fileID: 761180322}
   newPhaseManager: {fileID: 1691355804}
   comboUI: {fileID: 227906082}
   comboPointMultiplier: 400
   debug: 0
   landClip: {fileID: 8300000, guid: 28cb22a019a064941aa106aa089f28e3, type: 3}
+  boosterPickupClip: {fileID: 0}
+  comboClip: {fileID: 0}
   audioSource: {fileID: 227906083}
   landVolume: 3
   boosterVolume: 3
+  comboVolume: 1
+  cameraLandingShake: {fileID: 0}
 --- !u!114 &227906085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2505,6 +2523,9 @@ MonoBehaviour:
   playerLanding: {fileID: 227906084}
   newPhaseManager: {fileID: 1691355804}
   playerVisualFacing: {fileID: 227906087}
+  fallHitClip: {fileID: 0}
+  sfxSource: {fileID: 0}
+  fallHitVolume: 1
 --- !u!114 &227906086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9999,6 +10020,11 @@ MonoBehaviour:
   bonusGo: {fileID: 0}
   bonusTotalPanel: {fileID: 0}
   sellPanel: {fileID: 0}
+  sfxSource: {fileID: 0}
+  continueClip: {fileID: 0}
+  continueVolume: 0.8
+  continueLoadDelay: 0.08
+  continueSfxSource: {fileID: 0}
 --- !u!1 &755666732 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8846737274113074935, guid: 81a74a0aefeb7674ca32535d1a269b4a, type: 3}
@@ -10083,6 +10109,11 @@ MonoBehaviour:
   pausePanel: {fileID: 1202867733}
   continueButton: {fileID: 605965255}
   toggleKey: 27
+  sfxSource: {fileID: 0}
+  pauseClip: {fileID: 0}
+  resumeClip: {fileID: 0}
+  sfxVolume: 1
+  playerBehavioursToDisable: []
 --- !u!224 &771546824
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10401,6 +10432,11 @@ MonoBehaviour:
   highScoreScoreTxt: {fileID: 877746214}
   hudHighScoreTxt: {fileID: 685614808}
   fileName: highscore.json
+  sfxSource: {fileID: 0}
+  confirmClip: {fileID: 0}
+  confirmVolume: 1
+  confirmLoadDelay: 0.08
+  continueSfxSource: {fileID: 0}
 --- !u!1 &821578517
 GameObject:
   m_ObjectHideFlags: 0
@@ -10606,6 +10642,8 @@ MonoBehaviour:
   sinkBeforeDisable: 1
   sinkDistance: 2.5
   sinkSpeed: 3
+  expiredClip: {fileID: 0}
+  expiredVolume: 1
   tiltWhileSinking: 1
   tiltAngle: -15
   tiltSpeed: 3
@@ -16293,6 +16331,7 @@ MonoBehaviour:
   onText: MUSIC ON
   offText: MUSIC OFF
   musicSource: {fileID: 462444413}
+  pauseSfxSource: {fileID: 0}
 --- !u!114 &1026347919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17258,6 +17297,8 @@ MonoBehaviour:
   sinkBeforeDisable: 1
   sinkDistance: 2.5
   sinkSpeed: 3
+  expiredClip: {fileID: 0}
+  expiredVolume: 1
   tiltWhileSinking: 1
   tiltAngle: -15
   tiltSpeed: 3
@@ -34552,6 +34593,8 @@ MonoBehaviour:
   sinkBeforeDisable: 1
   sinkDistance: 2.5
   sinkSpeed: 3
+  expiredClip: {fileID: 0}
+  expiredVolume: 1
   tiltWhileSinking: 1
   tiltAngle: -15
   tiltSpeed: 3
@@ -34830,6 +34873,8 @@ MonoBehaviour:
   sinkBeforeDisable: 1
   sinkDistance: 2.5
   sinkSpeed: 3
+  expiredClip: {fileID: 0}
+  expiredVolume: 1
   tiltWhileSinking: 1
   tiltAngle: -15
   tiltSpeed: 3
@@ -35148,6 +35193,8 @@ MonoBehaviour:
   sinkBeforeDisable: 1
   sinkDistance: 2.5
   sinkSpeed: 3
+  expiredClip: {fileID: 0}
+  expiredVolume: 1
   tiltWhileSinking: 1
   tiltAngle: -15
   tiltSpeed: 3
@@ -35671,6 +35718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreManager: {fileID: 761180322}
   livesDisplay: {fileID: 66944637}
+  fallbackLevel: 0
 --- !u!82 &1691355803
 AudioSource:
   m_ObjectHideFlags: 0
@@ -35795,7 +35843,9 @@ MonoBehaviour:
   transferStep: 10
   transferTickSeconds: 0.02
   sfxSource: {fileID: 1691355803}
+  goalEnabledClip: {fileID: 0}
   goalReachedClip: {fileID: 8300000, guid: ff413c1df211c814ebd6e0108ff1ecb3, type: 3}
+  goalEffectBellClip: {fileID: 0}
   musicSource: {fileID: 462444413}
   freezeOnComplete: 1
   playerRigidbody: {fileID: 0}
@@ -41521,6 +41571,7 @@ MonoBehaviour:
   livesDisplay: {fileID: 66944637}
   timeOutPanel: {fileID: 2106778633}
   gameOverController: {fileID: 1921093857}
+  continueSfxSource: {fileID: 0}
 --- !u!4 &1870357363
 Transform:
   m_ObjectHideFlags: 0
@@ -46468,6 +46519,11 @@ MonoBehaviour:
   behavioursToDisable:
   - {fileID: 227906077}
   highScoreSystem: {fileID: 810864488}
+  sfxSource: {fileID: 0}
+  continueClip: {fileID: 0}
+  continueVolume: 1
+  continueLoadDelay: 0.08
+  continueSfxSource: {fileID: 0}
 --- !u!224 &1921093858
 RectTransform:
   m_ObjectHideFlags: 0
@@ -46515,6 +46571,9 @@ MonoBehaviour:
   popOvershoot: 1.08
   taxStep: 10
   taxTickSeconds: 0.1
+  sfxSource: {fileID: 0}
+  titleAppearClip: {fileID: 0}
+  titleAppearVolume: 1
 --- !u!114 &1960587226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46572,7 +46631,6 @@ MonoBehaviour:
   materialIndex: 1
   colorProperty: _BaseColor
   normalColor: {r: 0, g: 0.5203757, b: 1, a: 1}
-  delayBeforePulse: 5
   goalCoin: {fileID: 0}
 --- !u!114 &1960587233
 MonoBehaviour:
@@ -46713,6 +46771,8 @@ MonoBehaviour:
   sinkBeforeDisable: 1
   sinkDistance: 2.5
   sinkSpeed: 3
+  expiredClip: {fileID: 0}
+  expiredVolume: 1
   tiltWhileSinking: 1
   tiltAngle: -15
   tiltSpeed: 3
@@ -47112,6 +47172,8 @@ MonoBehaviour:
   sinkBeforeDisable: 1
   sinkDistance: 2.5
   sinkSpeed: 3
+  expiredClip: {fileID: 0}
+  expiredVolume: 1
   tiltWhileSinking: 1
   tiltAngle: -15
   tiltSpeed: 3
