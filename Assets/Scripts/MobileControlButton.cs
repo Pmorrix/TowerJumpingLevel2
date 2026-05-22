@@ -10,7 +10,8 @@ public sealed class MobileControlButton : MonoBehaviour, IPointerDownHandler, IP
         MoveRight,
         LaneBack,
         Jump,
-        Pause
+        Pause,
+        SwapControls
     }
 
     [SerializeField] private MobileControlsUI controls;
@@ -57,6 +58,9 @@ public sealed class MobileControlButton : MonoBehaviour, IPointerDownHandler, IP
                 break;
             case MobileAction.Pause:
                 controls?.Pause();
+                break;
+            case MobileAction.SwapControls:
+                controls?.SwapControls();
                 break;
         }
     }
