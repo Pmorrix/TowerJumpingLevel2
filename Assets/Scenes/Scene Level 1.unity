@@ -11110,7 +11110,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 170003, guid: a60a4c8f410b4d85946d8d9afe2f38fd, type: 3}
       propertyPath: m_Color.a
-      value: 0.6156863
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 170003, guid: a60a4c8f410b4d85946d8d9afe2f38fd, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 170003, guid: a60a4c8f410b4d85946d8d9afe2f38fd, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 170003, guid: a60a4c8f410b4d85946d8d9afe2f38fd, type: 3}
+      propertyPath: m_Color.r
+      value: 0.010149062
       objectReference: {fileID: 0}
     - target: {fileID: 180001, guid: a60a4c8f410b4d85946d8d9afe2f38fd, type: 3}
       propertyPath: m_AnchorMax.x
