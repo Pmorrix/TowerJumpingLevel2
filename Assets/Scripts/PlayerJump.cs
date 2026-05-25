@@ -18,6 +18,7 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private float groundCheckExtraDistance = 0.05f;
     [SerializeField] private float groundNormalYThreshold = 0.5f;
     [SerializeField] private int contactsBufferSize = 8;
+    [SerializeField] private float mobileGroundCheckIgnoreAfterJump = 0.20f;
 
     [Header("UI")]
     [Tooltip("Arrastra aquí el TextMeshProUGUI del Canvas: boostersTxt")]
@@ -63,6 +64,8 @@ public class PlayerJump : MonoBehaviour
     private bool _isGroundedNow;
     private bool _wasGroundedLastFrame;
     private bool _jumpStartedThisFrame;
+    private bool _jumpRequestedFromMobile;
+    private float _lastMobileJumpTime = -999f;
 
     public bool HasBooster => _hasBooster;
     public bool IsBoosterStateActive => _boosterStateActive;
@@ -95,6 +98,8 @@ public class PlayerJump : MonoBehaviour
         _jumpStartedThisFrame = false;
 
         _isGroundedNow = CheckGrounded();
+        if (ShouldIgnoreGroundCheckAfterJump())
+            _isGroundedNow = false;
 
         if (_isGroundedNow)
         {
@@ -133,7 +138,9 @@ public class PlayerJump : MonoBehaviour
     public void MobileJumpDown()
     {
         _jumpHeld = true;
+        _jumpRequestedFromMobile = true;
         TryJump();
+        _jumpRequestedFromMobile = false;
     }
 
     public void MobileJumpUp()
@@ -252,6 +259,9 @@ public class PlayerJump : MonoBehaviour
         _rb.AddForce(Vector3.up * jumpImpulse, ForceMode.Impulse);
 
         _jumpStartedThisFrame = true;
+        if (_jumpRequestedFromMobile)
+            _lastMobileJumpTime = Time.time;
+
         _isGroundedNow = false;
         _wasGroundedLastFrame = false;
 
@@ -329,6 +339,14 @@ public class PlayerJump : MonoBehaviour
         }
 
         return false;
+    }
+
+    private bool ShouldIgnoreGroundCheckAfterJump()
+    {
+        if (_rb == null)
+            return false;
+
+        return (Time.time - _lastMobileJumpTime) <= Mathf.Max(0f, mobileGroundCheckIgnoreAfterJump);
     }
 
     private void ResetJumpStateOnGround()

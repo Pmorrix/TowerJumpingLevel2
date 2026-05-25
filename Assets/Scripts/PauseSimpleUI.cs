@@ -23,6 +23,7 @@ public sealed class PauseSimpleUI : MonoBehaviour
     private bool _paused;
     private bool _playerBehavioursLocked;
     private bool[] _playerBehaviourWasEnabled;
+    private NewGameButtonPulse[] _pauseButtonPulses;
 
     private void Awake()
     {
@@ -86,7 +87,14 @@ public sealed class PauseSimpleUI : MonoBehaviour
         _paused = paused;
 
         if (pausePanel != null)
+        {
+            if (paused)
+                ApplyAndroidPausePanelHorizontalFit();
+
             pausePanel.SetActive(paused);
+        }
+
+        UpdatePauseButtonPulses(paused);
 
         if (stateChanged)
             PlayPauseSFX(paused);
@@ -157,6 +165,30 @@ public sealed class PauseSimpleUI : MonoBehaviour
         _playerBehavioursLocked = false;
     }
 
+    private void ApplyAndroidPausePanelHorizontalFit()
+    {
+        if (!ShouldApplyAndroidPausePanelHorizontalFit())
+            return;
+
+        RectTransform panelRect = pausePanel != null ? pausePanel.transform as RectTransform : null;
+        if (panelRect == null)
+            return;
+
+        panelRect.anchorMin = new Vector2(0f, panelRect.anchorMin.y);
+        panelRect.anchorMax = new Vector2(1f, panelRect.anchorMax.y);
+        panelRect.anchoredPosition = new Vector2(0f, panelRect.anchoredPosition.y);
+        panelRect.sizeDelta = new Vector2(0f, panelRect.sizeDelta.y);
+    }
+
+    private bool ShouldApplyAndroidPausePanelHorizontalFit()
+    {
+#if UNITY_ANDROID && !UNITY_EDITOR
+        return true;
+#else
+        return false;
+#endif
+    }
+
     private Behaviour[] GetPlayerBehavioursToDisable()
     {
         if (playerBehavioursToDisable != null && playerBehavioursToDisable.Length > 0)
@@ -185,6 +217,41 @@ public sealed class PauseSimpleUI : MonoBehaviour
 
         GameAudio.PlaySfx(sfxSource, clip, Mathf.Clamp01(sfxVolume));
         return true;
+    }
+
+    private void UpdatePauseButtonPulses(bool paused)
+    {
+        CachePauseButtonPulses();
+
+        if (_pauseButtonPulses == null)
+            return;
+
+        for (int i = 0; i < _pauseButtonPulses.Length; i++)
+        {
+            NewGameButtonPulse pulse = _pauseButtonPulses[i];
+            if (pulse == null)
+                continue;
+
+            pulse.enabled = paused && IsContinueButtonPulse(pulse);
+        }
+    }
+
+    private void CachePauseButtonPulses()
+    {
+        if (_pauseButtonPulses != null || pausePanel == null)
+            return;
+
+        _pauseButtonPulses = pausePanel.GetComponentsInChildren<NewGameButtonPulse>(true);
+    }
+
+    private bool IsContinueButtonPulse(NewGameButtonPulse pulse)
+    {
+        if (continueButton == null || pulse == null)
+            return false;
+
+        Transform pulseTransform = pulse.transform;
+        Transform continueTransform = continueButton.transform;
+        return pulseTransform == continueTransform || pulseTransform.IsChildOf(continueTransform);
     }
 
     private void EnsureSfxSource()

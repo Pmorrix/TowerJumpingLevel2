@@ -59,6 +59,7 @@ public class GameOverPanelUI : MonoBehaviour
 
     private void OnEnable()
     {
+        ApplyAndroidOverlayScale();
         CacheBaseScales();
         EnsureSfxSource();
         GameAudio.StopAllMusic(sfxSource);
@@ -263,6 +264,29 @@ public class GameOverPanelUI : MonoBehaviour
             StopCoroutine(_introRoutine);
             _introRoutine = null;
         }
+    }
+
+    private void ApplyAndroidOverlayScale()
+    {
+        if (!ShouldApplyAndroidOverlayScale())
+            return;
+
+        if (overlayCanvasGroup == null)
+            return;
+
+        Transform overlayTransform = overlayCanvasGroup.transform;
+        Vector3 scale = overlayTransform.localScale;
+        scale.x = 1.3f;
+        overlayTransform.localScale = scale;
+    }
+
+    private bool ShouldApplyAndroidOverlayScale()
+    {
+#if UNITY_ANDROID && !UNITY_EDITOR
+        return true;
+#else
+        return false;
+#endif
     }
 
     private float EaseOutCubic01(float t)
