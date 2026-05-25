@@ -46,6 +46,9 @@ public sealed class PauseSimpleUI : MonoBehaviour
             if (_paused) Resume();
             else Pause();
         }
+
+        if (_paused)
+            UpdatePauseButtonPulses(true);
     }
 
     public void Pause()
@@ -226,13 +229,15 @@ public sealed class PauseSimpleUI : MonoBehaviour
         if (_pauseButtonPulses == null)
             return;
 
+        NewGameButtonPulse hoveredPulse = paused ? GetHoveredButtonPulse() : null;
+
         for (int i = 0; i < _pauseButtonPulses.Length; i++)
         {
             NewGameButtonPulse pulse = _pauseButtonPulses[i];
             if (pulse == null)
                 continue;
 
-            pulse.enabled = paused && IsContinueButtonPulse(pulse);
+            pulse.enabled = paused && (pulse == hoveredPulse || (hoveredPulse == null && IsContinueButtonPulse(pulse)));
         }
     }
 
@@ -252,6 +257,33 @@ public sealed class PauseSimpleUI : MonoBehaviour
         Transform pulseTransform = pulse.transform;
         Transform continueTransform = continueButton.transform;
         return pulseTransform == continueTransform || pulseTransform.IsChildOf(continueTransform);
+    }
+
+    private NewGameButtonPulse GetHoveredButtonPulse()
+    {
+        if (_pauseButtonPulses == null)
+            return null;
+
+        Vector2 mousePosition = Input.mousePosition;
+
+        for (int i = 0; i < _pauseButtonPulses.Length; i++)
+        {
+            NewGameButtonPulse pulse = _pauseButtonPulses[i];
+            if (pulse == null)
+                continue;
+
+            RectTransform rectTransform = pulse.transform as RectTransform;
+            if (rectTransform == null)
+                continue;
+
+            Canvas canvas = rectTransform.GetComponentInParent<Canvas>();
+            Camera eventCamera = canvas != null && canvas.renderMode != RenderMode.ScreenSpaceOverlay ? canvas.worldCamera : null;
+
+            if (RectTransformUtility.RectangleContainsScreenPoint(rectTransform, mousePosition, eventCamera))
+                return pulse;
+        }
+
+        return null;
     }
 
     private void EnsureSfxSource()
