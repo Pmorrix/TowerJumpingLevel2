@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public sealed class MobileControlsUI : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public sealed class MobileControlsUI : MonoBehaviour
         ResolveControlRefs();
         LoadSavedLayout();
         ResolvePlayerRefs();
+        DisableRuntimeRenderingDebuggerOnMobile();
         ApplyPlatformVisibility();
     }
 
@@ -199,6 +201,15 @@ public sealed class MobileControlsUI : MonoBehaviour
             || showInEditorForTesting;
 #else
         return showInEditorForTesting;
+#endif
+    }
+
+    private static void DisableRuntimeRenderingDebuggerOnMobile()
+    {
+#if UNITY_ANDROID && !UNITY_EDITOR
+        DebugManager.instance.displayRuntimeUI = false;
+        DebugManager.instance.displayPersistentRuntimeUI = false;
+        DebugManager.instance.enableRuntimeUI = false;
 #endif
     }
 

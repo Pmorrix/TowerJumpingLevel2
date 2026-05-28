@@ -63,6 +63,13 @@ public class NewPlayerRespawnOnFloor : MonoBehaviour
         if (livesDisplay != null)
             livesDisplay.LoseLife();
 
+        RespawnAtDropPoint();
+    }
+
+    public void RespawnAtDropPoint()
+    {
+        _isRespawning = true;
+
         if (playerJump != null)
             playerJump.ResetBoosterCharges();
 

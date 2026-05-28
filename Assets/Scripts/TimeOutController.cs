@@ -5,8 +5,12 @@ public class TimeOutController : MonoBehaviour
     [Header("Refs")]
     [SerializeField] private NewPhaseManager newPhaseManager;
     [SerializeField] private LivesTextDisplay livesDisplay;
+    [SerializeField] private NewPlayerRespawnOnFloor playerRespawn;
     [SerializeField] private GameObject timeOutPanel;
     [SerializeField] private GameOverController gameOverController;
+
+    [Header("Audio")]
+    [SerializeField] private AudioSource musicSource;
     [SerializeField] private PauseSimpleUI continueSfxSource;
 
     private bool _handled;
@@ -34,6 +38,8 @@ public class TimeOutController : MonoBehaviour
 
         // Congelar juego
         Time.timeScale = 0f;
+
+        StopMusic();
 
         // Mostrar panel
         if (timeOutPanel != null)
@@ -68,6 +74,9 @@ public class TimeOutController : MonoBehaviour
 
             if (newPhaseManager != null)
                 newPhaseManager.ResetPhase();
+
+            RespawnPlayerAtStart();
+            ResumeMusicIfNeeded();
         }
         else
         {
@@ -75,5 +84,36 @@ public class TimeOutController : MonoBehaviour
             if (gameOverController != null)
                 gameOverController.TriggerGameOver();
         }
+    }
+
+    private void StopMusic()
+    {
+        if (musicSource != null)
+        {
+            GameAudio.StopMusic(musicSource);
+            return;
+        }
+
+        GameAudio.StopAllMusic();
+    }
+
+    private void RespawnPlayerAtStart()
+    {
+        if (playerRespawn == null)
+            playerRespawn = FindAnyObjectByType<NewPlayerRespawnOnFloor>();
+
+        if (playerRespawn != null)
+            playerRespawn.RespawnAtDropPoint();
+    }
+
+    private void ResumeMusicIfNeeded()
+    {
+        if (musicSource != null)
+        {
+            GameAudio.ApplyMusicEnabled(musicSource);
+            return;
+        }
+
+        GameAudio.RouteSceneAudioSources();
     }
 }

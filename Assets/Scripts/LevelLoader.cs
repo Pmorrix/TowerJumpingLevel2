@@ -67,6 +67,15 @@ public class LevelLoader : MonoBehaviour
         if (playedSfx && continueLoadDelay > 0f)
             yield return new WaitForSecondsRealtime(continueLoadDelay);
 
+        if (GameSession.CurrentLevel >= GameSession.FinalCampaignLevel && sellPanel != null)
+        {
+            GameSession.SetProgress(score, lives, GameSession.FinalCampaignLevel);
+            sellPanel.SetActive(true);
+            sellPanel.transform.SetAsLastSibling();
+            _loadingNextLevel = false;
+            yield break;
+        }
+
         GoToNextLevel.LoadNext(score, lives);
     }
 
