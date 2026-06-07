@@ -84,7 +84,7 @@ public class AiToolboxEditorDemo : MonoBehaviour {
         statusDescription.text = "";
         status.color = warningColor;
 
-        ChatGptService.StreamQuery("Debug log 'Hello, world!'", 0, 90, Settings.ChatGptModel.Gpt35Turbo, null, _ => {
+        ChatGptService.StreamQuery("Debug log 'Hello, world!'", 0, 90, "gpt-4o", null, _ => {
             _testQueryFinished = true;
             status.text = "OpenAI API Connection OK";
             status.color = successColor;

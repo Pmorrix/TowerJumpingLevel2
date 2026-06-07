@@ -152,7 +152,7 @@ public static class ChatGpt {
         }
 
         var requestObject = new RequestMessage {
-            model = GetModelName(parameters.model),
+            model = GetResolvedModelName(parameters),
             temperature = parameters.temperature,
             stream = false,
             messages = ConvertMessages(messages, parameters.role),
@@ -213,7 +213,7 @@ public static class ChatGpt {
                                       Action<string> updateCallback, Action<string> completeCallback,
                                       Action<long, string> failureCallback, RequestRecord requestRecord) {
         var requestObject = new RequestMessage {
-            model = GetModelName(parameters.model),
+            model = GetResolvedModelName(parameters),
             temperature = parameters.temperature,
             stream = true,
             messages = ConvertMessages(messages, parameters.role),
@@ -244,13 +244,30 @@ public static class ChatGpt {
 
                 var text = request.downloadHandler.text;
                 var newText = text.Substring(textLength);
-                textLength = text.Length;
+                var hasIncompleteChunk = false;
                 while (newText.Contains("data: ")) {
-                    var startTrimmed =
-                        newText.Substring(newText.IndexOf("data: ", StringComparison.Ordinal) + "data: ".Length);
+                    var dataMarkerIndex = newText.IndexOf("data: ", StringComparison.Ordinal);
+                    var startTrimmed = newText.Substring(dataMarkerIndex + "data: ".Length);
                     var dataEndPosition = startTrimmed.IndexOf("data: ", StringComparison.Ordinal);
-                    var dataJson = dataEndPosition == -1 ? startTrimmed : startTrimmed.Substring(0, dataEndPosition);
-                    newText = startTrimmed.Substring(dataJson.Length);
+
+                    string dataJson;
+                    if (dataEndPosition != -1) {
+                        dataJson = startTrimmed.Substring(0, dataEndPosition);
+                        newText = startTrimmed.Substring(dataEndPosition);
+                    } else {
+                        // No next "data: " found. Use newline as end-of-message delimiter
+                        // since SSE messages are terminated by \n.
+                        var newlinePos = startTrimmed.IndexOf('\n');
+                        if (newlinePos == -1) {
+                            // Incomplete SSE message — reprocess next frame.
+                            hasIncompleteChunk = true;
+                            textLength = text.Length - newText.Length + dataMarkerIndex;
+                            break;
+                        }
+                        dataJson = startTrimmed.Substring(0, newlinePos);
+                        newText = startTrimmed.Substring(newlinePos);
+                    }
+
                     if (dataJson.Contains("[DONE]")) {
                         break;
                     }
@@ -282,6 +299,10 @@ public static class ChatGpt {
                         _requestRecords.Remove(requestRecord);
                         yield break;
                     }
+                }
+
+                if (!hasIncompleteChunk) {
+                    textLength = text.Length;
                 }
             }
 
@@ -352,8 +373,9 @@ public static class ChatGpt {
         return request;
     }
 
-    private static string GetModelName(ChatGptModel chatGptModel) {
-        return chatGptModel switch {
+    private static string GetResolvedModelName(ChatGptParameters parameters) {
+        if (!string.IsNullOrEmpty(parameters.modelId)) return parameters.modelId;
+        return parameters.model switch {
             ChatGptModel.Gpt35Turbo => "gpt-3.5-turbo",
             ChatGptModel.Gpt4 => "gpt-4",
             ChatGptModel.Gpt4Turbo => "gpt-4-turbo",
@@ -362,7 +384,7 @@ public static class ChatGpt {
             ChatGptModel.o1Mini => "o1-mini",
             ChatGptModel.o1Preview => "o1-preview",
             ChatGptModel.o3Mini => "o3-mini",
-            _ => throw new ArgumentOutOfRangeException(nameof(chatGptModel), chatGptModel, null)
+            _ => throw new ArgumentOutOfRangeException(nameof(parameters.model), parameters.model, null)
             // 0d344651-d8d3-46d2-b91c-031a0a12d4e8
         };
     }

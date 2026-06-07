@@ -191,11 +191,21 @@ public class ChatGptParametersDrawer : PropertyDrawer {
 
             // Model
             {
-                var modelProperty = property.FindPropertyRelative(nameof(ChatGptParameters.model));
+                var modelIdProperty = property.FindPropertyRelative(nameof(ChatGptParameters.modelId));
                 var rect = new Rect(position.x, position.y + _height, width, EditorGUIUtility.singleLineHeight);
-                var modelLabel = new GUIContent("Model", "The ChatGPT model to use.");
-                EditorGUI.PropertyField(rect, modelProperty, modelLabel);
+                var modelLabel = new GUIContent("Model", "The ChatGPT model to use, e.g. 'gpt-4o'.");
+                EditorGUI.PropertyField(rect, modelIdProperty, modelLabel);
                 _height += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
+
+                // Show hint when modelId is empty — the old enum will be used as fallback.
+                if (string.IsNullOrEmpty(modelIdProperty.stringValue)) {
+                    var enumProperty = property.FindPropertyRelative(nameof(ChatGptParameters.model));
+                    var hintRect = new Rect(position.x, position.y + _height, width,
+                                            EditorGUIUtility.singleLineHeight);
+                    EditorGUI.PropertyField(hintRect, enumProperty,
+                                            new GUIContent("Model (legacy)", "Used when Model is empty."));
+                    _height += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
+                }
             }
 
             // Temperature

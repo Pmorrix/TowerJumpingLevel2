@@ -142,6 +142,6 @@ AssetOrigin:
   serializedVersion: 1
   productId: 250892
   packageName: "AI Toolbox with ChatGPT, DALL\xB7E, Whisper, Gemini etc"
-  packageVersion: 7.0.0
+  packageVersion: 7.1.0
   assetPath: Assets/AI Toolbox/Samples/Runtime Usage/Shared Assets/Textures/RectangleRounded_2.png
-  uploadId: 832026
+  uploadId: 894990

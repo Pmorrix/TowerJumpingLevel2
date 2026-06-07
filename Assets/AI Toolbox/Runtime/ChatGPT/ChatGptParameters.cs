@@ -14,6 +14,7 @@ public class ChatGptParameters : ISerializationCallbackReceiver {
     public string apiKeyRemoteConfigKey;
     public string apiKeyEncryptionPassword;
 
+    public string modelId;
     public ChatGptModel model;
     public float temperature;
     [CanBeNull]
@@ -34,6 +35,7 @@ public class ChatGptParameters : ISerializationCallbackReceiver {
         apiKeyEncryption = parameters.apiKeyEncryption;
         apiKeyRemoteConfigKey = parameters.apiKeyRemoteConfigKey;
         apiKeyEncryptionPassword = parameters.apiKeyEncryptionPassword;
+        modelId = parameters.modelId;
         model = parameters.model;
         temperature = parameters.temperature;
         timeout = parameters.timeout;
