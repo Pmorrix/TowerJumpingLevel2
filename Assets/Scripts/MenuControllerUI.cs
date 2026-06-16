@@ -2,7 +2,6 @@ using System.Globalization;
 using System.Text;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 
 public sealed class MenuControllerUI : MonoBehaviour
 {
@@ -92,9 +91,8 @@ public sealed class MenuControllerUI : MonoBehaviour
                 continue;
 
             opt.Init(this, idx);
-
-            if (opt.Button != null)
-                opt.Button.onClick.AddListener(() => ClickSelect(idx));
+            // MenuOptionUI handles pointer clicks so mouse and keyboard use the same selection path.
+            opt.SetButtonComponentEnabled(false);
         }
     }
 
@@ -109,20 +107,20 @@ public sealed class MenuControllerUI : MonoBehaviour
         SetIndex(index);
     }
 
-    private void ClickSelect(int clickedIndex)
+    public void PointerClickSelect(int clickedIndex)
     {
         if (panelsUI != null && panelsUI.IsAnyPanelOpen())
             return;
 
-        ExecuteOption(clickedIndex, true);
+        ExecuteOption(clickedIndex);
     }
 
     private void Confirm()
     {
-        ExecuteOption(_index, false);
+        ExecuteOption(_index);
     }
 
-    private void ExecuteOption(int index, bool invokedByMouseClick)
+    private void ExecuteOption(int index)
     {
         if (options == null || index < 0 || index >= options.Length)
             return;
@@ -137,16 +135,6 @@ public sealed class MenuControllerUI : MonoBehaviour
 
         if (TryInvokeBuiltInAction(index))
             return;
-    }
-
-    private bool HasPersistentButtonAction(int index)
-    {
-        Button button = options[index]?.Button;
-
-        if (button == null)
-            return false;
-
-        return button.onClick != null && button.onClick.GetPersistentEventCount() > 0;
     }
 
     private bool TryInvokeOnSelect(int index)

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 [DisallowMultipleComponent]
-public sealed class MenuOptionUI : MonoBehaviour, IPointerEnterHandler
+public sealed class MenuOptionUI : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler
 {
     [Header("Refs")]
     [SerializeField] private TMP_Text label;
@@ -47,6 +47,21 @@ public sealed class MenuOptionUI : MonoBehaviour, IPointerEnterHandler
     {
         if (controller != null)
             controller.HoverSelect(optionIndex);
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (eventData != null && eventData.button != PointerEventData.InputButton.Left)
+            return;
+
+        if (controller != null)
+            controller.PointerClickSelect(optionIndex);
+    }
+
+    public void SetButtonComponentEnabled(bool enabled)
+    {
+        if (button != null)
+            button.enabled = enabled;
     }
 
     public void ApplyVisual(bool isActive, Color normalColor, Color activeColor, bool useAsterisks)

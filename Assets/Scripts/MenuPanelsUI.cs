@@ -12,6 +12,7 @@ public sealed class MenuPanelsUI : MonoBehaviour
     [Header("Refs")]
     [Tooltip("Root de opciones (suele ser 'Options' o 'MainMenuRoot' según tu escena)")]
     [SerializeField] private GameObject menuOptionsRoot;
+    [SerializeField] private GameObject menuHeaderRoot;
     [SerializeField] private GameObject controlsPanel;
     [SerializeField] private GameObject creditsPanel;
     [SerializeField] private GameObject playerToHide;
@@ -32,6 +33,7 @@ public sealed class MenuPanelsUI : MonoBehaviour
 
     [Header("Music Toggle")]
     [SerializeField] private GameObject musicToggleRoot;
+    [SerializeField] private string menuHeaderName = "Header";
     [SerializeField] private string musicToggleName = "MusicToggle";
     [SerializeField] private float musicToggleRevealDelay = 1.15f;
     [SerializeField] private bool forceMusicOnWhenEnteringMenu = true;
@@ -118,6 +120,7 @@ public sealed class MenuPanelsUI : MonoBehaviour
         if (menuOptionsRoot != null)
             menuOptionsRoot.SetActive(true);
 
+        SetMenuHeaderVisible(true);
         RestorePlayerVisibility();
         ScheduleMusicToggleReveal();
     }
@@ -141,6 +144,7 @@ public sealed class MenuPanelsUI : MonoBehaviour
         if (menuOptionsRoot != null)
             menuOptionsRoot.SetActive(false);
 
+        SetMenuHeaderVisible(false);
         StopMusicToggleReveal();
         SetMusicToggleVisible(false);
         HidePlayerForPanel();
@@ -239,6 +243,15 @@ public sealed class MenuPanelsUI : MonoBehaviour
     {
         if (musicToggleRoot != null)
             musicToggleRoot.SetActive(visible);
+    }
+
+    private void SetMenuHeaderVisible(bool visible)
+    {
+        if (menuHeaderRoot == null)
+            menuHeaderRoot = FindInactiveChildByName(transform.root, menuHeaderName);
+
+        if (menuHeaderRoot != null)
+            menuHeaderRoot.SetActive(visible);
     }
 
     private GameObject FindInactiveChildByName(Transform root, string targetName)

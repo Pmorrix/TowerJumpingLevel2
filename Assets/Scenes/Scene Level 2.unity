@@ -2089,9 +2089,9 @@ MonoBehaviour:
   playerLanding: {fileID: 227906089}
   phaseManager: {fileID: 1691355804}
   playerVisualFacing: {fileID: 227906087}
-  fallHitClip: {fileID: 8300000, guid: 28c5094f83faf2f49858f22124c339af, type: 3}
-  sfxSource: {fileID: 0}
-  fallHitVolume: 1
+  fallHitClip: {fileID: 8300000, guid: f44e67d502692e94cba9fa45eb49d4c9, type: 3}
+  sfxSource: {fileID: 227906090}
+  fallHitVolume: 3
 --- !u!114 &227906086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11679,7 +11679,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 1
+  m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -41600,6 +41600,7 @@ MonoBehaviour:
   goalEnableTime: 5
   startValue: 1200
   decayPerSecond: 10
+  taxStartDelay: 10
   timeTxt: {fileID: 1436509235}
   levelCompletePanelRoot: {fileID: 176608650}
   nextLevelPanelUI: {fileID: 176608656}
@@ -42164,7 +42165,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.25, y: -60.298042}
+  m_AnchoredPosition: {x: -7.250061, y: -60.298035}
   m_SizeDelta: {x: 203.90007, y: 239.40392}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1846140409
