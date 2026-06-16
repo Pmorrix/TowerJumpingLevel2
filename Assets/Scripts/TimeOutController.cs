@@ -20,12 +20,18 @@ public class TimeOutController : MonoBehaviour
     {
         if (phaseManager != null)
             phaseManager.OnTimeUp += HandleTimeOut;
+
+        if (livesDisplay != null)
+            livesDisplay.OnLivesDepleted += HandleLivesDepleted;
     }
 
     private void OnDisable()
     {
         if (phaseManager != null)
             phaseManager.OnTimeUp -= HandleTimeOut;
+
+        if (livesDisplay != null)
+            livesDisplay.OnLivesDepleted -= HandleLivesDepleted;
     }
 
     /// <summary>
@@ -34,6 +40,20 @@ public class TimeOutController : MonoBehaviour
     private void HandleTimeOut()
     {
         if (_handled) return;
+
+        if (livesDisplay != null && livesDisplay.CurrentLives <= 0)
+        {
+            _handled = true;
+
+            if (timeOutPanel != null)
+                timeOutPanel.SetActive(false);
+
+            if (gameOverController != null)
+                gameOverController.TriggerGameOver();
+
+            return;
+        }
+
         _handled = true;
 
         // Congelar juego
@@ -47,6 +67,17 @@ public class TimeOutController : MonoBehaviour
             timeOutPanel.SetActive(true);
             timeOutPanel.transform.SetAsLastSibling();
         }
+    }
+
+    private void HandleLivesDepleted()
+    {
+        _handled = true;
+
+        if (timeOutPanel != null)
+            timeOutPanel.SetActive(false);
+
+        if (gameOverController != null)
+            gameOverController.TriggerGameOver();
     }
 
     /// <summary>
