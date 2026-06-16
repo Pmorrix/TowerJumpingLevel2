@@ -1,11 +1,11 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class TimeOutController : MonoBehaviour
 {
     [Header("Refs")]
-    [SerializeField] private NewPhaseManager newPhaseManager;
+    [SerializeField] private PhaseManager phaseManager;
     [SerializeField] private LivesTextDisplay livesDisplay;
-    [SerializeField] private NewPlayerRespawnOnFloor playerRespawn;
+    [SerializeField] private PlayerRespawnOnFloor playerRespawn;
     [SerializeField] private GameObject timeOutPanel;
     [SerializeField] private GameOverController gameOverController;
 
@@ -18,14 +18,14 @@ public class TimeOutController : MonoBehaviour
     // 🔹 SUSCRIPCIÓN AL EVENTO
     private void OnEnable()
     {
-        if (newPhaseManager != null)
-            newPhaseManager.OnTimeUp += HandleTimeOut;
+        if (phaseManager != null)
+            phaseManager.OnTimeUp += HandleTimeOut;
     }
 
     private void OnDisable()
     {
-        if (newPhaseManager != null)
-            newPhaseManager.OnTimeUp -= HandleTimeOut;
+        if (phaseManager != null)
+            phaseManager.OnTimeUp -= HandleTimeOut;
     }
 
     /// <summary>
@@ -72,8 +72,8 @@ public class TimeOutController : MonoBehaviour
         {
             _handled = false;
 
-            if (newPhaseManager != null)
-                newPhaseManager.ResetPhase();
+            if (phaseManager != null)
+                phaseManager.ResetPhase();
 
             RespawnPlayerAtStart();
             ResumeMusicIfNeeded();
@@ -100,7 +100,7 @@ public class TimeOutController : MonoBehaviour
     private void RespawnPlayerAtStart()
     {
         if (playerRespawn == null)
-            playerRespawn = FindAnyObjectByType<NewPlayerRespawnOnFloor>();
+            playerRespawn = FindAnyObjectByType<PlayerRespawnOnFloor>();
 
         if (playerRespawn != null)
             playerRespawn.RespawnAtDropPoint();

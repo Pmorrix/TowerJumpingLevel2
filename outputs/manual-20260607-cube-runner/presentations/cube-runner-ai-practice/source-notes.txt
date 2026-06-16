@@ -1,0 +1,10 @@
+Reference PDF inspected:
+C:\Users\Phillips\Documents\UMAClase1_PROYECTABLE_UMA_FINAL_MULTIMODAL_IMAGENES (2).pdf
+
+Reference page count: 37.
+Observed style: white widescreen slides, red top rule, red academic header text, large black titles, sparse bullets, grey callout bars/cards, dark navy prompt/code blocks.
+
+Generated visual asset used:
+C:\TowerJumpingLevel2\outputs\manual-20260607-cube-runner\presentations\cube-runner-ai-practice\assets\cube-runner-arena-concept.png
+
+No official institutional logo was redrawn. Header uses text-only course labeling.

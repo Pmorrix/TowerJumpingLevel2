@@ -4588,7 +4588,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 29683051c89d9c24ca33b8932b6c4c04, type: 3}
+  m_Resource: {fileID: 8300000, guid: 02b46a217b80959429f34895b22ba65e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -6033,7 +6033,7 @@ BoxCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 16.5553, y: 32.917427, z: 16.555258}
@@ -8800,9 +8800,9 @@ MonoBehaviour:
   buildsRoot: {fileID: 351263283}
   scoreManager: {fileID: 989471}
   disableTimeScoreInBonus: 1
-  prizeBellSfx: {fileID: 8300000, guid: 649af5391b75e554885af08376dc72f0, type: 3}
+  prizeBellSfx: {fileID: 8300000, guid: 485385bb8aba7814b8ab69767177398e, type: 3}
   sfxSource: {fileID: 1415177337}
-  sfxVolume: 0.949
+  sfxVolume: 0.97
   bonusPerPickup: 500
   autoPickInitialIfNoneActive: 1
   comboBonusStep: 250
@@ -9693,7 +9693,7 @@ MonoBehaviour:
   livesDisplay: {fileID: 0}
   playerJump: {fileID: 1549924272}
   playerLanding: {fileID: 1549924269}
-  newPhaseManager: {fileID: 0}
+  phaseManager: {fileID: 0}
   playerVisualFacing: {fileID: 1549924266}
   fallHitClip: {fileID: 0}
   sfxSource: {fileID: 0}
@@ -9718,7 +9718,7 @@ MonoBehaviour:
   playerJump: {fileID: 1549924272}
   grantPlayerBoosterOnBuildingBooster: 0
   scoreManager: {fileID: 989471}
-  newPhaseManager: {fileID: 0}
+  phaseManager: {fileID: 0}
   comboUI: {fileID: 1549924271}
   comboPointMultiplier: 400
   debug: 0
@@ -9727,7 +9727,7 @@ MonoBehaviour:
   comboClip: {fileID: 8300000, guid: 668620113e9d6dc4483ba3d8dbae9fcf, type: 3}
   audioSource: {fileID: 1549924270}
   landVolume: 3
-  boosterVolume: 3
+  boosterVolume: 1
   comboVolume: 1
   cameraLandingShake: {fileID: 0}
 --- !u!82 &1549924270
@@ -14407,7 +14407,7 @@ BoxCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 16.5553, y: 32.917427, z: 16.555258}

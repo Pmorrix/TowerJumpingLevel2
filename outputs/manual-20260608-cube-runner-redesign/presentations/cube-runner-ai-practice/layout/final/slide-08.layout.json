@@ -1,0 +1,1075 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/s4fnrd",
+    "id": "s4fnrd",
+    "slide": 8,
+    "layoutId": "30cd8fef-2eb8-4d0d-af6f-9126bdbf83d9",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "3533c00b-240c-4a1d-8880-a1e63742c178",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display",
+      "Consolas"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "30cd8fef-2eb8-4d0d-af6f-9126bdbf83d9",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "3533c00b-240c-4a1d-8880-a1e63742c178",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "3533c00b-240c-4a1d-8880-a1e63742c178",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h4byhgn2",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#FFFFFF",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/adsji5sn",
+      "id": "2",
+      "bbox": [
+        35,
+        27,
+        1210,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#E61B2A",
+      "lineColor": "#E61B2A",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/6tovahoz",
+      "id": "3",
+      "bbox": [
+        996,
+        48,
+        200,
+        42
+      ],
+      "alt": "Máster en Creación de Videojuegos",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "2c5bd870-3057-4011-973b-3fb5f44936c9",
+        "contentType": "image/png",
+        "byteLength": 19269
+      }
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s72x4nap",
+      "id": "4",
+      "bbox": [
+        75,
+        652,
+        520,
+        18
+      ],
+      "geometry": "rect",
+      "text": "Máster en Creación de Videojuegos - Universidad de Málaga",
+      "textPreview": "Máster en Creación de Videojuegos - Universidad de Málaga",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "Aptos",
+        "color": "#8B93A1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Máster en Creación de Videojuegos - Universidad de Málaga"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Máster en Creación de Videojuegos - Universidad de Málaga",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Aptos",
+            "color": "#8B93A1",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Máster en Creación de Videojuegos - Universidad de Málaga",
+              "fontSize": 11,
+              "typeface": "Aptos",
+              "color": "#8B93A1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lszqtcj6",
+      "id": "5",
+      "bbox": [
+        1150,
+        652,
+        34,
+        18
+      ],
+      "geometry": "rect",
+      "text": "08",
+      "textPreview": "08",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "Aptos",
+        "color": "#8B93A1",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "08"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "08",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Aptos",
+            "color": "#8B93A1",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "08",
+              "fontSize": 11,
+              "typeface": "Aptos",
+              "color": "#8B93A1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a5gbq1or",
+      "id": "6",
+      "bbox": [
+        75,
+        100,
+        920,
+        64
+      ],
+      "geometry": "rect",
+      "text": "El primer prompt no pide código",
+      "textPreview": "El primer prompt no pide código",
+      "resolvedFontSize": 45,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 45,
+        "typeface": "Aptos Display",
+        "color": "#222733",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "El primer prompt no pide código"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "El primer prompt no pide código",
+          "resolvedTextStyle": {
+            "fontSize": 45,
+            "typeface": "Aptos Display",
+            "color": "#222733",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "El primer prompt no pide código",
+              "fontSize": 45,
+              "typeface": "Aptos Display",
+              "color": "#222733",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3m94fu18",
+      "id": "7",
+      "bbox": [
+        92,
+        190,
+        650,
+        335
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#111A28",
+      "lineColor": "#111A28",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s36hcrmh",
+      "id": "8",
+      "bbox": [
+        114,
+        208,
+        606,
+        305
+      ],
+      "geometry": "rect",
+      "text": "Estoy preparando una escena básica de Unity 3D para Cube Runner Arena.\nUso solo plano, cápsula, esfera y cubo.\n\nDame una checklist corta para:\n- player con Rigidbody\n- suelo con Collider\n- paredes\n- cámara\n- materiales\n- jerarquía\n\nNo generes código todavía.",
+      "textPreview": "Estoy preparando una escena básica de Unity 3D para Cube Runner Arena. | Uso solo plano, cápsula, esfera y cubo. |  | Dame una checklist ...",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Consolas",
+        "color": "#EEF4FF",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 12,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Estoy preparando una escena básica de Unity 3D para Cube Runner Arena."
+          },
+          {
+            "index": 2,
+            "text": "Uso solo plano, cápsula, esfera y cubo."
+          },
+          {
+            "index": 3,
+            "text": ""
+          },
+          {
+            "index": 4,
+            "text": "Dame una checklist corta para:"
+          },
+          {
+            "index": 5,
+            "text": "- player con Rigidbody"
+          },
+          {
+            "index": 6,
+            "text": "- suelo con Collider"
+          },
+          {
+            "index": 7,
+            "text": "- paredes"
+          },
+          {
+            "index": 8,
+            "text": "- cámara"
+          },
+          {
+            "index": 9,
+            "text": "- materiales"
+          },
+          {
+            "index": 10,
+            "text": "- jerarquía"
+          },
+          {
+            "index": 11,
+            "text": ""
+          },
+          {
+            "index": 12,
+            "text": "No generes código todavía."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Estoy preparando una escena básica de Unity 3D para Cube Runner Arena.",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Estoy preparando una escena básica de Unity 3D para Cube Runner Arena.",
+              "fontSize": 14,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Uso solo plano, cápsula, esfera y cubo.",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Uso solo plano, cápsula, esfera y cubo.",
+              "fontSize": 14,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "Dame una checklist corta para:",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Dame una checklist corta para:",
+              "fontSize": 14,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "- player con Rigidbody",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- player con Rigidbody",
+              "fontSize": 14,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 6,
+          "text": "- suelo con Collider",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- suelo con Collider",
+              "fontSize": 14,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 7,
+          "text": "- paredes",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- paredes",
+              "fontSize": 14,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 8,
+          "text": "- cámara",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- cámara",
+              "fontSize": 14,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 9,
+          "text": "- materiales",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- materiales",
+              "fontSize": 14,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 10,
+          "text": "- jerarquía",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "- jerarquía",
+              "fontSize": 14,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 12,
+          "text": "No generes código todavía.",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "No generes código todavía.",
+              "fontSize": 14,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hoza1gvy",
+      "id": "9",
+      "bbox": [
+        800,
+        220,
+        250,
+        58
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF0F2",
+      "lineColor": "#E61B2A",
+      "lineWidth": 1
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/58z25kb6",
+      "id": "10",
+      "bbox": [
+        816,
+        234,
+        218,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Objetivo",
+      "textPreview": "Objetivo",
+      "resolvedFontSize": 13.2,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13.2,
+        "typeface": "Aptos",
+        "color": "#222733",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Objetivo"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Objetivo",
+          "resolvedTextStyle": {
+            "fontSize": 13.2,
+            "typeface": "Aptos",
+            "color": "#222733",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Objetivo",
+              "fontSize": 13.2,
+              "typeface": "Aptos",
+              "color": "#222733",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gn29gr2p",
+      "id": "11",
+      "bbox": [
+        816,
+        262,
+        218,
+        8
+      ],
+      "geometry": "rect",
+      "text": "Reducir incertidumbre antes de programar.",
+      "textPreview": "Reducir incertidumbre antes de programar.",
+      "resolvedFontSize": 10.8,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10.8,
+        "typeface": "Aptos",
+        "color": "#596272",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Reducir incertidumbre antes de programar."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Reducir incertidumbre antes de programar.",
+          "resolvedTextStyle": {
+            "fontSize": 10.8,
+            "typeface": "Aptos",
+            "color": "#596272",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Reducir incertidumbre antes de programar.",
+              "fontSize": 10.8,
+              "typeface": "Aptos",
+              "color": "#596272"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/n29gr2p8",
+      "id": "12",
+      "bbox": [
+        800,
+        302,
+        250,
+        58
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F3F5F7",
+      "lineColor": "#DDE2E8",
+      "lineWidth": 1
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yhgn29gr",
+      "id": "13",
+      "bbox": [
+        816,
+        316,
+        218,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Resultado",
+      "textPreview": "Resultado",
+      "resolvedFontSize": 13.2,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13.2,
+        "typeface": "Aptos",
+        "color": "#222733",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Resultado"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Resultado",
+          "resolvedTextStyle": {
+            "fontSize": 13.2,
+            "typeface": "Aptos",
+            "color": "#222733",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Resultado",
+              "fontSize": 13.2,
+              "typeface": "Aptos",
+              "color": "#222733",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5wjudg7a",
+      "id": "14",
+      "bbox": [
+        816,
+        344,
+        218,
+        8
+      ],
+      "geometry": "rect",
+      "text": "Lista de objetos y componentes.",
+      "textPreview": "Lista de objetos y componentes.",
+      "resolvedFontSize": 10.8,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10.8,
+        "typeface": "Aptos",
+        "color": "#596272",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Lista de objetos y componentes."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Lista de objetos y componentes.",
+          "resolvedTextStyle": {
+            "fontSize": 10.8,
+            "typeface": "Aptos",
+            "color": "#596272",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Lista de objetos y componentes.",
+              "fontSize": 10.8,
+              "typeface": "Aptos",
+              "color": "#596272"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gbq1oryt",
+      "id": "15",
+      "bbox": [
+        800,
+        384,
+        250,
+        58
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F3F5F7",
+      "lineColor": "#DDE2E8",
+      "lineWidth": 1
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nuxc3ylc",
+      "id": "16",
+      "bbox": [
+        816,
+        398,
+        218,
+        24
+      ],
+      "geometry": "rect",
+      "text": "Verificación",
+      "textPreview": "Verificación",
+      "resolvedFontSize": 13.2,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13.2,
+        "typeface": "Aptos",
+        "color": "#222733",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Verificación"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Verificación",
+          "resolvedTextStyle": {
+            "fontSize": 13.2,
+            "typeface": "Aptos",
+            "color": "#222733",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Verificación",
+              "fontSize": 13.2,
+              "typeface": "Aptos",
+              "color": "#222733",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y90je9cv",
+      "id": "17",
+      "bbox": [
+        816,
+        426,
+        218,
+        8
+      ],
+      "geometry": "rect",
+      "text": "Todo se comprueba en la escena.",
+      "textPreview": "Todo se comprueba en la escena.",
+      "resolvedFontSize": 10.8,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 10.8,
+        "typeface": "Aptos",
+        "color": "#596272",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Todo se comprueba en la escena."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Todo se comprueba en la escena.",
+          "resolvedTextStyle": {
+            "fontSize": 10.8,
+            "typeface": "Aptos",
+            "color": "#596272",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Todo se comprueba en la escena.",
+              "fontSize": 10.8,
+              "typeface": "Aptos",
+              "color": "#596272"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

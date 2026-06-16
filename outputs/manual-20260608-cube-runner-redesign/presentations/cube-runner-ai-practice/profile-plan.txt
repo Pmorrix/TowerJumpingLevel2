@@ -1,0 +1,16 @@
+task mode: create with strict visual reference
+primary deck-profile: engineering-platform
+reference deck: C:\Users\Phillips\Documents\UMAClase1_PROYECTABLE_UMA_FINAL_MULTIMODAL_IMAGENES.pdf
+asset folder: https://drive.google.com/drive/folders/1Au66gEeNG1PpedzghmGbABxGSpLB5O1Z
+
+Design lock:
+- Use official Máster en Creación de Videojuegos PNG from Drive as header.
+- White 16:9 slide, red top rule, clean black headings, red claim text.
+- Sparse bullets, grey cards, red-outline emphasis cards.
+- Dark navy prompt/code blocks.
+- Unity section graphics use model-like screenshot panels rather than unrelated generated illustration.
+
+Content lock:
+- Practical AI class for Cube Runner Arena.
+- ChatGPT gratuito, sin suscripción.
+- Unity 3D + C# using primitive objects only.

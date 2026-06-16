@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class CentralBuildingEffect : MonoBehaviour
@@ -12,7 +12,7 @@ public class CentralBuildingEffect : MonoBehaviour
     [SerializeField] private string buildingColorProperty = "_WindowOnColor";
 
     [Header("Central Building Destruction")]
-    [SerializeField] private NewBuildingTimeController newBuildingTimeController;
+    [SerializeField] private BuildingTimeController buildingTimeController;
     [SerializeField] private float collapseDelay = 0.35f;
 
     private Coroutine currentRoutine;
@@ -25,8 +25,8 @@ public class CentralBuildingEffect : MonoBehaviour
         if (targetRenderer == null)
             targetRenderer = GetComponentInChildren<Renderer>();
 
-        if (newBuildingTimeController == null)
-            newBuildingTimeController = GetComponent<NewBuildingTimeController>();
+        if (buildingTimeController == null)
+            buildingTimeController = GetComponent<BuildingTimeController>();
 
         _mpb = new MaterialPropertyBlock();
         _buildingColorPropertyId = Shader.PropertyToID(buildingColorProperty);
@@ -47,8 +47,8 @@ public class CentralBuildingEffect : MonoBehaviour
     {
         effectActive = true;
 
-        if (newBuildingTimeController != null)
-            newBuildingTimeController.DisableBuildingImmediate(collapseDelay);
+        if (buildingTimeController != null)
+            buildingTimeController.DisableBuildingImmediate(collapseDelay);
 
         PlayerBoosterEffect boosterVisual = player.GetComponent<PlayerBoosterEffect>();
 

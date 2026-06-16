@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,7 +10,7 @@ public class GameOverController : MonoBehaviour
 
     [Header("Score / Tax")]
     [SerializeField] private ScoreManager scoreManager;
-    [SerializeField] private NewPhaseManager newPhaseManager;
+    [SerializeField] private PhaseManager phaseManager;
     [SerializeField] private GameOverPanelUI gameOverPanelUI;
 
     [Header("Disable Player Control")]
@@ -76,15 +76,15 @@ public class GameOverController : MonoBehaviour
             }
         }
 
-        // Congelar juego (el TAX visual usa tiempo real dentro de NewPhaseManager)
+        // Congelar juego (el TAX visual usa tiempo real dentro de PhaseManager)
         Time.timeScale = 0f;
 
         // Aplicar TAX visual (solo una vez) y luego mostrar panel
-        if (!_taxApplied && newPhaseManager != null)
+        if (!_taxApplied && phaseManager != null)
         {
             _taxApplied = true;
 
-            newPhaseManager.PlayExitTaxVisualThen(() =>
+            phaseManager.PlayExitTaxVisualThen(() =>
             {
                 int finalScore = (scoreManager != null) ? scoreManager.Score : 0;
 
@@ -104,7 +104,7 @@ public class GameOverController : MonoBehaviour
             return;
         }
 
-        // Fallback si no hay NewPhaseManager (no TAX)
+        // Fallback si no hay PhaseManager (no TAX)
         int fallbackScore = (scoreManager != null) ? scoreManager.Score : 0;
 
         if (gameOverPanel != null)

@@ -1,0 +1,7 @@
+story: 4/5 - follows the five-hour class flow from objective to implementation to verification.
+specificity: 5/5 - Unity 3D, C#, ChatGPT gratuito, primitive objects, concrete scripts and inspector checks.
+rhythm: 4/5 - alternates agenda, prompts, diagrams, code, QA checklists and appendices.
+whitespace: pending render review.
+chart clarity: 4/5 - no quantitative charts; workflow/scene diagrams are simple and labeled.
+typography: pending render review.
+restraint: 4/5 - matches reference style without decorative logos or unrelated assets.

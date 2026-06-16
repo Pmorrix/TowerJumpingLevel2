@@ -1,0 +1,19 @@
+Reference PDF:
+C:\Users\Phillips\Documents\UMAClase1_PROYECTABLE_UMA_FINAL_MULTIMODAL_IMAGENES.pdf
+
+Drive assets used:
+https://drive.google.com/drive/folders/1Au66gEeNG1PpedzghmGbABxGSpLB5O1Z
+
+Downloaded PNGs:
+- logo-title-01.png
+- logo-title-02.png
+- logo-title-03.png
+- logo-title-04.png
+- logo-title-05.png
+- logo-title-06.png
+- logo-title-07.png
+
+Primary header asset:
+logo-title-07.png
+
+No institutional logo was redrawn. The deck uses the provided raster assets directly.

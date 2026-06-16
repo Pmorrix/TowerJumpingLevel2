@@ -1,0 +1,897 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/fwzdle",
+    "id": "fwzdle",
+    "slide": 28,
+    "layoutId": "30cd8fef-2eb8-4d0d-af6f-9126bdbf83d9",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "3533c00b-240c-4a1d-8880-a1e63742c178",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display",
+      "Consolas"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "30cd8fef-2eb8-4d0d-af6f-9126bdbf83d9",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "3533c00b-240c-4a1d-8880-a1e63742c178",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "3533c00b-240c-4a1d-8880-a1e63742c178",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g7adsji5",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#FFFFFF",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rmhk3q5o",
+      "id": "2",
+      "bbox": [
+        35,
+        27,
+        1210,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#E61B2A",
+      "lineColor": "#E61B2A",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/3m94fu18",
+      "id": "3",
+      "bbox": [
+        996,
+        48,
+        200,
+        42
+      ],
+      "alt": "Máster en Creación de Videojuegos",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "e474d4fd-95d2-4cc4-91db-7ea9ceb0cdec",
+        "contentType": "image/png",
+        "byteLength": 19269
+      }
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/90je9cvi",
+      "id": "4",
+      "bbox": [
+        75,
+        652,
+        520,
+        18
+      ],
+      "geometry": "rect",
+      "text": "Máster en Creación de Videojuegos - Universidad de Málaga",
+      "textPreview": "Máster en Creación de Videojuegos - Universidad de Málaga",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "Aptos",
+        "color": "#8B93A1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Máster en Creación de Videojuegos - Universidad de Málaga"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Máster en Creación de Videojuegos - Universidad de Málaga",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Aptos",
+            "color": "#8B93A1",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Máster en Creación de Videojuegos - Universidad de Málaga",
+              "fontSize": 11,
+              "typeface": "Aptos",
+              "color": "#8B93A1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gfmlkjm1",
+      "id": "5",
+      "bbox": [
+        1150,
+        652,
+        34,
+        18
+      ],
+      "geometry": "rect",
+      "text": "28",
+      "textPreview": "28",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "Aptos",
+        "color": "#8B93A1",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "28"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "28",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Aptos",
+            "color": "#8B93A1",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "28",
+              "fontSize": 11,
+              "typeface": "Aptos",
+              "color": "#8B93A1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rytsvu9k",
+      "id": "6",
+      "bbox": [
+        75,
+        100,
+        920,
+        64
+      ],
+      "geometry": "rect",
+      "text": "Anexo: PlayerMovement completo",
+      "textPreview": "Anexo: PlayerMovement completo",
+      "resolvedFontSize": 45,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 45,
+        "typeface": "Aptos Display",
+        "color": "#222733",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Anexo: PlayerMovement completo"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Anexo: PlayerMovement completo",
+          "resolvedTextStyle": {
+            "fontSize": 45,
+            "typeface": "Aptos Display",
+            "color": "#222733",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Anexo: PlayerMovement completo",
+              "fontSize": 45,
+              "typeface": "Aptos Display",
+              "color": "#222733",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yd0z6103",
+      "id": "7",
+      "bbox": [
+        74,
+        150,
+        1050,
+        470
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#111A28",
+      "lineColor": "#111A28",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9cvixcze",
+      "id": "8",
+      "bbox": [
+        96,
+        168,
+        1006,
+        440
+      ],
+      "geometry": "rect",
+      "text": "using UnityEngine;\n\n[RequireComponent(typeof(Rigidbody))]\npublic class PlayerMovement : MonoBehaviour\n{\n    [SerializeField] private float moveSpeed = 6f;\n    private Rigidbody rb;\n    private Vector3 moveDirection;\n\n    private void Awake() => rb = GetComponent<Rigidbody>();\n\n    private void Update()\n    {\n        float horizontal = Input.GetAxisRaw(\"Horizontal\");\n        float vertical = Input.GetAxisRaw(\"Vertical\");\n        moveDirection = new Vector3(horizontal, 0f, vertical).normalized;\n    }\n\n    private void FixedUpdate()\n    {\n        if (rb == null) return;\n        Vector3 nextPosition = rb.position + moveDirection * moveSpeed * Time.fixedDeltaTime;\n        rb.MovePosition(nextPosition);\n    }\n}",
+      "textPreview": "using UnityEngine; |  | [RequireComponent(typeof(Rigidbody))] | public class PlayerMovement : MonoBehaviour | { |     [SerializeField] pr...",
+      "resolvedFontSize": 11.6,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11.6,
+        "typeface": "Consolas",
+        "color": "#EEF4FF",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 25,
+        "lines": [
+          {
+            "index": 1,
+            "text": "using UnityEngine;"
+          },
+          {
+            "index": 2,
+            "text": ""
+          },
+          {
+            "index": 3,
+            "text": "[RequireComponent(typeof(Rigidbody))]"
+          },
+          {
+            "index": 4,
+            "text": "public class PlayerMovement : MonoBehaviour"
+          },
+          {
+            "index": 5,
+            "text": "{"
+          },
+          {
+            "index": 6,
+            "text": "    [SerializeField] private float moveSpeed = 6f;"
+          },
+          {
+            "index": 7,
+            "text": "    private Rigidbody rb;"
+          },
+          {
+            "index": 8,
+            "text": "    private Vector3 moveDirection;"
+          },
+          {
+            "index": 9,
+            "text": ""
+          },
+          {
+            "index": 10,
+            "text": "    private void Awake() => rb = GetComponent<Rigidbody>();"
+          },
+          {
+            "index": 11,
+            "text": ""
+          },
+          {
+            "index": 12,
+            "text": "    private void Update()"
+          },
+          {
+            "index": 13,
+            "text": "    {"
+          },
+          {
+            "index": 14,
+            "text": "        float horizontal = Input.GetAxisRaw(\"Horizontal\");"
+          },
+          {
+            "index": 15,
+            "text": "        float vertical = Input.GetAxisRaw(\"Vertical\");"
+          },
+          {
+            "index": 16,
+            "text": "        moveDirection = new Vector3(horizontal, 0f, vertical).normalized;"
+          },
+          {
+            "index": 17,
+            "text": "    }"
+          },
+          {
+            "index": 18,
+            "text": ""
+          },
+          {
+            "index": 19,
+            "text": "    private void FixedUpdate()"
+          },
+          {
+            "index": 20,
+            "text": "    {"
+          },
+          {
+            "index": 21,
+            "text": "        if (rb == null) return;"
+          },
+          {
+            "index": 22,
+            "text": "        Vector3 nextPosition = rb.position + moveDirection * moveSpeed * Time.fixedDeltaTime;"
+          },
+          {
+            "index": 23,
+            "text": "        rb.MovePosition(nextPosition);"
+          },
+          {
+            "index": 24,
+            "text": "    }"
+          },
+          {
+            "index": 25,
+            "text": "}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "using UnityEngine;",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "using UnityEngine;",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "[RequireComponent(typeof(Rigidbody))]",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "[RequireComponent(typeof(Rigidbody))]",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "public class PlayerMovement : MonoBehaviour",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "public class PlayerMovement : MonoBehaviour",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "{",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "{",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 6,
+          "text": "    [SerializeField] private float moveSpeed = 6f;",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    [SerializeField] private float moveSpeed = 6f;",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 7,
+          "text": "    private Rigidbody rb;",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    private Rigidbody rb;",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 8,
+          "text": "    private Vector3 moveDirection;",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    private Vector3 moveDirection;",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 10,
+          "text": "    private void Awake() => rb = GetComponent<Rigidbody>();",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    private void Awake() => rb = GetComponent<Rigidbody>();",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 12,
+          "text": "    private void Update()",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    private void Update()",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 13,
+          "text": "    {",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    {",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 14,
+          "text": "        float horizontal = Input.GetAxisRaw(\"Horizontal\");",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "        float horizontal = Input.GetAxisRaw(\"Horizontal\");",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 15,
+          "text": "        float vertical = Input.GetAxisRaw(\"Vertical\");",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "        float vertical = Input.GetAxisRaw(\"Vertical\");",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 16,
+          "text": "        moveDirection = new Vector3(horizontal, 0f, vertical).normalized;",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "        moveDirection = new Vector3(horizontal, 0f, vertical).normalized;",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 17,
+          "text": "    }",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    }",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 19,
+          "text": "    private void FixedUpdate()",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    private void FixedUpdate()",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 20,
+          "text": "    {",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    {",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 21,
+          "text": "        if (rb == null) return;",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "        if (rb == null) return;",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 22,
+          "text": "        Vector3 nextPosition = rb.position + moveDirection * moveSpeed * Time.fixedDeltaTime;",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "        Vector3 nextPosition = rb.position + moveDirection * moveSpeed * Time.fixedDeltaTime;",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 23,
+          "text": "        rb.MovePosition(nextPosition);",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "        rb.MovePosition(nextPosition);",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 24,
+          "text": "    }",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    }",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 25,
+          "text": "}",
+          "resolvedTextStyle": {
+            "fontSize": 11.6,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "}",
+              "fontSize": 11.6,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

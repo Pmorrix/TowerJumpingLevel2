@@ -2087,7 +2087,7 @@ MonoBehaviour:
   livesDisplay: {fileID: 66944637}
   playerJump: {fileID: 227906092}
   playerLanding: {fileID: 227906089}
-  newPhaseManager: {fileID: 1691355804}
+  phaseManager: {fileID: 1691355804}
   playerVisualFacing: {fileID: 227906087}
   fallHitClip: {fileID: 8300000, guid: 28c5094f83faf2f49858f22124c339af, type: 3}
   sfxSource: {fileID: 0}
@@ -2168,7 +2168,7 @@ MonoBehaviour:
   playerJump: {fileID: 227906092}
   grantPlayerBoosterOnBuildingBooster: 1
   scoreManager: {fileID: 761180322}
-  newPhaseManager: {fileID: 1691355804}
+  phaseManager: {fileID: 1691355804}
   comboUI: {fileID: 227906091}
   comboPointMultiplier: 475
   debug: 1
@@ -2177,7 +2177,7 @@ MonoBehaviour:
   comboClip: {fileID: 8300000, guid: 668620113e9d6dc4483ba3d8dbae9fcf, type: 3}
   audioSource: {fileID: 227906090}
   landVolume: 3
-  boosterVolume: 3
+  boosterVolume: 1
   comboVolume: 1
   cameraLandingShake: {fileID: 1054595539}
 --- !u!82 &227906090
@@ -40122,7 +40122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10aebcaaf397d2f4c841e2f53b3ccc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newPhaseManager: {fileID: 1691355804}
+  phaseManager: {fileID: 1691355804}
   timeTxt: {fileID: 1436509235}
 --- !u!114 &1436509234
 MonoBehaviour:
@@ -41451,7 +41451,7 @@ GameObject:
   - component: {fileID: 1691355803}
   - component: {fileID: 1691355804}
   m_Layer: 0
-  m_Name: NewPhaseManager
+  m_Name: PhaseManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41596,8 +41596,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e0e67f3c8ea5a846a1b43ed1ea1ed82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newGoalBuilding: {fileID: 1960587231}
-  goalEnableTime: 1
+  goalBuilding: {fileID: 1960587231}
+  goalEnableTime: 5
   startValue: 1200
   decayPerSecond: 10
   timeTxt: {fileID: 1436509235}
@@ -42400,7 +42400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16c7d31bbb771140b176fba1cb05eee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newPhaseManager: {fileID: 1691355804}
+  phaseManager: {fileID: 1691355804}
   livesDisplay: {fileID: 66944637}
   playerRespawn: {fileID: 227906085}
   timeOutPanel: {fileID: 2106778633}
@@ -42455,7 +42455,7 @@ MonoBehaviour:
   livesDisplay: {fileID: 66944637}
   gameOverPanel: {fileID: 1093944053}
   scoreManager: {fileID: 761180322}
-  newPhaseManager: {fileID: 1691355804}
+  phaseManager: {fileID: 1691355804}
   gameOverPanelUI: {fileID: 1921093859}
   behavioursToDisable:
   - {fileID: 227906092}
@@ -47603,7 +47603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6b1a7899e912744a3f51c958b912e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newPhaseManager: {fileID: 1691355804}
+  phaseManager: {fileID: 1691355804}
   targetRenderer: {fileID: 5787463058999867169}
   buildingPulse: {fileID: 1960587226}
   materialIndex: 1

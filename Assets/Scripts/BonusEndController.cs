@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -153,7 +153,7 @@ public class BonusEndController : MonoBehaviour
             if (child == null) continue;
             if (!child.gameObject.activeInHierarchy) continue;
 
-            if (child.GetComponent<NewBuildingTimeController>() != null)
+            if (child.GetComponent<BuildingTimeController>() != null)
                 alive++;
         }
 

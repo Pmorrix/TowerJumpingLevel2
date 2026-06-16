@@ -1,0 +1,845 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/ruf0jz",
+    "id": "ruf0jz",
+    "slide": 32,
+    "layoutId": "30cd8fef-2eb8-4d0d-af6f-9126bdbf83d9",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "3533c00b-240c-4a1d-8880-a1e63742c178",
+    "masterLayoutName": "Master",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Aptos Display",
+      "Consolas"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "30cd8fef-2eb8-4d0d-af6f-9126bdbf83d9",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "3533c00b-240c-4a1d-8880-a1e63742c178",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "3533c00b-240c-4a1d-8880-a1e63742c178",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vmtwra5g",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#FFFFFF",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o7qpg3ex",
+      "id": "2",
+      "bbox": [
+        35,
+        27,
+        1210,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#E61B2A",
+      "lineColor": "#E61B2A",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/orytsvu9",
+      "id": "3",
+      "bbox": [
+        996,
+        48,
+        200,
+        42
+      ],
+      "alt": "Máster en Creación de Videojuegos",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "695c5c16-b22f-4c76-bb55-d42a8ec76938",
+        "contentType": "image/png",
+        "byteLength": 19269
+      }
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6dcbulwv",
+      "id": "4",
+      "bbox": [
+        75,
+        652,
+        520,
+        18
+      ],
+      "geometry": "rect",
+      "text": "Máster en Creación de Videojuegos - Universidad de Málaga",
+      "textPreview": "Máster en Creación de Videojuegos - Universidad de Málaga",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "Aptos",
+        "color": "#8B93A1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Máster en Creación de Videojuegos - Universidad de Málaga"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Máster en Creación de Videojuegos - Universidad de Málaga",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Aptos",
+            "color": "#8B93A1",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Máster en Creación de Videojuegos - Universidad de Málaga",
+              "fontSize": 11,
+              "typeface": "Aptos",
+              "color": "#8B93A1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vy90je9c",
+      "id": "5",
+      "bbox": [
+        1150,
+        652,
+        34,
+        18
+      ],
+      "geometry": "rect",
+      "text": "32",
+      "textPreview": "32",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "Aptos",
+        "color": "#8B93A1",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "32"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "32",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Aptos",
+            "color": "#8B93A1",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "32",
+              "fontSize": 11,
+              "typeface": "Aptos",
+              "color": "#8B93A1"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oj2t83it",
+      "id": "6",
+      "bbox": [
+        75,
+        100,
+        920,
+        64
+      ],
+      "geometry": "rect",
+      "text": "Anexo: GameManager 3/3",
+      "textPreview": "Anexo: GameManager 3/3",
+      "resolvedFontSize": 45,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 45,
+        "typeface": "Aptos Display",
+        "color": "#222733",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Anexo: GameManager 3/3"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Anexo: GameManager 3/3",
+          "resolvedTextStyle": {
+            "fontSize": 45,
+            "typeface": "Aptos Display",
+            "color": "#222733",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Anexo: GameManager 3/3",
+              "fontSize": 45,
+              "typeface": "Aptos Display",
+              "color": "#222733",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d4vmtwra",
+      "id": "7",
+      "bbox": [
+        70,
+        160,
+        1060,
+        430
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#111A28",
+      "lineColor": "#111A28",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6hcrmhk3",
+      "id": "8",
+      "bbox": [
+        92,
+        178,
+        1016,
+        400
+      ],
+      "geometry": "rect",
+      "text": "    public void LoseGame()\n    {\n        if (gameEnded) return;\n        gameEnded = true;\n        if (messageText != null) messageText.text = \"GAME OVER - Press R\";\n    }\n\n    private void WinGame()\n    {\n        gameEnded = true;\n        if (messageText != null) messageText.text = \"YOU WIN! - Press R\";\n    }\n\n    private void RestartGame()\n    {\n        Scene currentScene = SceneManager.GetActiveScene();\n        SceneManager.LoadScene(currentScene.name);\n    }\n\n    private void UpdateScoreUI() { if (scoreText != null) scoreText.text = \"Score: \" + score; }\n    private void UpdateTimeUI() { if (timeText != null) timeText.text = \"Time: \" + Mathf.CeilToInt(timeRemaining); }\n}",
+      "textPreview": "public void LoseGame() |     { |         if (gameEnded) return; |         gameEnded = true; |         if (messageText != null) messageTex...",
+      "resolvedFontSize": 11.2,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11.2,
+        "typeface": "Consolas",
+        "color": "#EEF4FF",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 22,
+        "lines": [
+          {
+            "index": 1,
+            "text": "    public void LoseGame()"
+          },
+          {
+            "index": 2,
+            "text": "    {"
+          },
+          {
+            "index": 3,
+            "text": "        if (gameEnded) return;"
+          },
+          {
+            "index": 4,
+            "text": "        gameEnded = true;"
+          },
+          {
+            "index": 5,
+            "text": "        if (messageText != null) messageText.text = \"GAME OVER - Press R\";"
+          },
+          {
+            "index": 6,
+            "text": "    }"
+          },
+          {
+            "index": 7,
+            "text": ""
+          },
+          {
+            "index": 8,
+            "text": "    private void WinGame()"
+          },
+          {
+            "index": 9,
+            "text": "    {"
+          },
+          {
+            "index": 10,
+            "text": "        gameEnded = true;"
+          },
+          {
+            "index": 11,
+            "text": "        if (messageText != null) messageText.text = \"YOU WIN! - Press R\";"
+          },
+          {
+            "index": 12,
+            "text": "    }"
+          },
+          {
+            "index": 13,
+            "text": ""
+          },
+          {
+            "index": 14,
+            "text": "    private void RestartGame()"
+          },
+          {
+            "index": 15,
+            "text": "    {"
+          },
+          {
+            "index": 16,
+            "text": "        Scene currentScene = SceneManager.GetActiveScene();"
+          },
+          {
+            "index": 17,
+            "text": "        SceneManager.LoadScene(currentScene.name);"
+          },
+          {
+            "index": 18,
+            "text": "    }"
+          },
+          {
+            "index": 19,
+            "text": ""
+          },
+          {
+            "index": 20,
+            "text": "    private void UpdateScoreUI() { if (scoreText != null) scoreText.text = \"Score: \" + score; }"
+          },
+          {
+            "index": 21,
+            "text": "    private void UpdateTimeUI() { if (timeText != null) timeText.text = \"Time: \" + Mathf.CeilToInt(timeRemaining); }"
+          },
+          {
+            "index": 22,
+            "text": "}"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "    public void LoseGame()",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    public void LoseGame()",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "    {",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    {",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "        if (gameEnded) return;",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "        if (gameEnded) return;",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "        gameEnded = true;",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "        gameEnded = true;",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "        if (messageText != null) messageText.text = \"GAME OVER - Press R\";",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "        if (messageText != null) messageText.text = \"GAME OVER - Press R\";",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 6,
+          "text": "    }",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    }",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 8,
+          "text": "    private void WinGame()",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    private void WinGame()",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 9,
+          "text": "    {",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    {",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 10,
+          "text": "        gameEnded = true;",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "        gameEnded = true;",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 11,
+          "text": "        if (messageText != null) messageText.text = \"YOU WIN! - Press R\";",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "        if (messageText != null) messageText.text = \"YOU WIN! - Press R\";",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 12,
+          "text": "    }",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    }",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 14,
+          "text": "    private void RestartGame()",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    private void RestartGame()",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 15,
+          "text": "    {",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    {",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 16,
+          "text": "        Scene currentScene = SceneManager.GetActiveScene();",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "        Scene currentScene = SceneManager.GetActiveScene();",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 17,
+          "text": "        SceneManager.LoadScene(currentScene.name);",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "        SceneManager.LoadScene(currentScene.name);",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 18,
+          "text": "    }",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    }",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 20,
+          "text": "    private void UpdateScoreUI() { if (scoreText != null) scoreText.text = \"Score: \" + score; }",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    private void UpdateScoreUI() { if (scoreText != null) scoreText.text = \"Score: \" + score; }",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 21,
+          "text": "    private void UpdateTimeUI() { if (timeText != null) timeText.text = \"Time: \" + Mathf.CeilToInt(timeRemaining); }",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    private void UpdateTimeUI() { if (timeText != null) timeText.text = \"Time: \" + Mathf.CeilToInt(timeRemaining); }",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 22,
+          "text": "}",
+          "resolvedTextStyle": {
+            "fontSize": 11.2,
+            "typeface": "Consolas",
+            "color": "#EEF4FF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "}",
+              "fontSize": 11.2,
+              "typeface": "Consolas",
+              "color": "#EEF4FF"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "fillColor": "rgba(0, 0, 0, 0)",
+      "lineColor": "rgba(0, 0, 0, 0)",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

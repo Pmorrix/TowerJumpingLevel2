@@ -11,12 +11,12 @@ public class BonusSDC : MonoBehaviour
     [Tooltip("Si > 0, fuerza maxTime en BuildingTimeController SOLO para el bonus (mismo tiempo para todos).")]
     [SerializeField] private float overrideMaxTime = -1f;
 
-    [Tooltip("Si está activo, salta edificios inactivos al iniciar.")]
+    [Tooltip("Si estï¿½ activo, salta edificios inactivos al iniciar.")]
     [SerializeField] private bool skipInactive = true;
 
     [SerializeField] private BonusEndController endController;
 
-    private readonly List<NewBuildingTimeController> _buildings = new();
+    private readonly List<BuildingTimeController> _buildings = new();
     private bool _started;
 
     public bool HasStarted => _started;
@@ -42,10 +42,10 @@ public class BonusSDC : MonoBehaviour
             var child = buildsRoot.GetChild(i);
             if (child == null) continue;
 
-            var btc = child.GetComponent<NewBuildingTimeController>();
+            var btc = child.GetComponent<BuildingTimeController>();
             if (btc == null)
             {
-                Debug.LogWarning($"[BonusSDC] '{child.name}' no tiene NewBuildingTimeController.");
+                Debug.LogWarning($"[BonusSDC] '{child.name}' no tiene BuildingTimeController.");
                 continue;
             }
 
@@ -55,7 +55,7 @@ public class BonusSDC : MonoBehaviour
 
     /// <summary>
     /// Llamar cuando el player aterrice en el primer edificio.
-    /// Inicia la destrucción de TODOS los edificios a la vez.
+    /// Inicia la destrucciï¿½n de TODOS los edificios a la vez.
     /// </summary>
     public void StartAll()
     {
@@ -67,7 +67,7 @@ public class BonusSDC : MonoBehaviour
             endController.Arm();
 
 
-        // Por si cambió la jerarquía en play:
+        // Por si cambiï¿½ la jerarquï¿½a en play:
         CacheBuildings();
 
         for (int i = 0; i < _buildings.Count; i++)

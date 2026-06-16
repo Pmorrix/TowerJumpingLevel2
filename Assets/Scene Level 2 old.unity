@@ -1934,7 +1934,7 @@ MonoBehaviour:
   landClip: {fileID: 8300000, guid: 28cb22a019a064941aa106aa089f28e3, type: 3}
   audioSource: {fileID: 227906083}
   landVolume: 3
-  boosterVolume: 3
+  boosterVolume: 1
 --- !u!114 &227906081
 MonoBehaviour:
   m_ObjectHideFlags: 0

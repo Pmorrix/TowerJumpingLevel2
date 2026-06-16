@@ -14,12 +14,12 @@ public class LevelPlaybackTester : MonoBehaviour
     [SerializeField] private Rigidbody playerRigidbody;
     [SerializeField] private PlayerMove playerMove;
     [SerializeField] private PlayerJump playerJump;
-    [SerializeField] private NewPlayerLanding playerLanding;
-    [SerializeField] private NewPlayerRespawnOnFloor playerRespawn;
+    [SerializeField] private PlayerLanding playerLanding;
+    [SerializeField] private PlayerRespawnOnFloor playerRespawn;
     [SerializeField] private PlayerVisualFacing playerVisualFacing;
     [SerializeField] private PlayerVisualAnimatorBridge playerVisualAnimatorBridge;
-    [SerializeField] private NewBuildingGoalController goalController;
-    [SerializeField] private NewPhaseManager newPhaseManager;
+    [SerializeField] private BuildingGoalController goalController;
+    [SerializeField] private PhaseManager phaseManager;
     [SerializeField] private MonoBehaviour[] extraBehavioursToDisable;
 
     [Header("Route")]
@@ -209,10 +209,10 @@ public class LevelPlaybackTester : MonoBehaviour
             playerJump = playerTransform.GetComponent<PlayerJump>();
 
         if (playerLanding == null)
-            playerLanding = playerTransform.GetComponent<NewPlayerLanding>();
+            playerLanding = playerTransform.GetComponent<PlayerLanding>();
 
         if (playerRespawn == null)
-            playerRespawn = playerTransform.GetComponent<NewPlayerRespawnOnFloor>();
+            playerRespawn = playerTransform.GetComponent<PlayerRespawnOnFloor>();
 
         if (playerVisualFacing == null)
             playerVisualFacing = playerTransform.GetComponent<PlayerVisualFacing>();
@@ -221,10 +221,10 @@ public class LevelPlaybackTester : MonoBehaviour
             playerVisualAnimatorBridge = playerTransform.GetComponent<PlayerVisualAnimatorBridge>();
 
         if (goalController == null)
-            goalController = FindObjectOfType<NewBuildingGoalController>();
+            goalController = FindObjectOfType<BuildingGoalController>();
 
-        if (newPhaseManager == null)
-            newPhaseManager = FindObjectOfType<NewPhaseManager>();
+        if (phaseManager == null)
+            phaseManager = FindObjectOfType<PhaseManager>();
 
         return true;
     }
@@ -233,12 +233,12 @@ public class LevelPlaybackTester : MonoBehaviour
     {
         routePoints.Clear();
 
-        NewBuildingTimeController[] allBuildings = FindObjectsOfType<NewBuildingTimeController>();
-        List<NewBuildingTimeController> pending = new List<NewBuildingTimeController>();
+        BuildingTimeController[] allBuildings = FindObjectsOfType<BuildingTimeController>();
+        List<BuildingTimeController> pending = new List<BuildingTimeController>();
 
         for (int i = 0; i < allBuildings.Length; i++)
         {
-            NewBuildingTimeController building = allBuildings[i];
+            BuildingTimeController building = allBuildings[i];
             if (building == null || !building.isActiveAndEnabled)
                 continue;
 
@@ -321,7 +321,7 @@ public class LevelPlaybackTester : MonoBehaviour
         DisableBehaviour(playerVisualAnimatorBridge);
 
         if (pauseGameplaySystems)
-            DisableBehaviour(newPhaseManager);
+            DisableBehaviour(phaseManager);
 
         if (extraBehavioursToDisable != null)
         {
@@ -712,7 +712,7 @@ public class LevelPlaybackTester : MonoBehaviour
             playerTransform = playerJump.transform;
 
         if (goalController == null)
-            goalController = FindObjectOfType<NewBuildingGoalController>();
+            goalController = FindObjectOfType<BuildingGoalController>();
 
         return playerTransform != null;
     }

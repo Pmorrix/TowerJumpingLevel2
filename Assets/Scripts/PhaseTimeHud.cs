@@ -4,7 +4,7 @@ using UnityEngine;
 public sealed class PhaseTimeHud : MonoBehaviour
 {
     [Header("Refs")]
-    [SerializeField] private NewPhaseManager newPhaseManager;
+    [SerializeField] private PhaseManager phaseManager;
     [SerializeField] private TMP_Text timeTxt; // asigna TimeTxt
 
     private void Awake()
@@ -18,9 +18,9 @@ public sealed class PhaseTimeHud : MonoBehaviour
 
     private void Update()
     {
-        if (newPhaseManager == null || timeTxt == null)
+        if (phaseManager == null || timeTxt == null)
             return;
 
-        //timeTxt.text ="" + newPhaseManager.CurrentCountdownValue.ToString("D5");
+        //timeTxt.text ="" + phaseManager.CurrentCountdownValue.ToString("D5");
     }
 }

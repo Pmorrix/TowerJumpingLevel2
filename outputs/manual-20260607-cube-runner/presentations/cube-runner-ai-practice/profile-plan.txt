@@ -1,0 +1,8 @@
+task mode: create
+primary deck-profile: engineering-platform
+reference: C:\Users\Phillips\Documents\UMAClase1_PROYECTABLE_UMA_FINAL_MULTIMODAL_IMAGENES (2).pdf
+visual rules from reference: white background, thin red top rule, large black headings, red claim emphasis, sparse bullets, grey cards, dark navy code blocks, small academic footer.
+content scope: five-hour practical AI class for a Unity 3D + C# video game master's module.
+required proof objects: workflow map, Unity scene/component checklist, prompt patterns, code snippets, debugging checklist, final delivery checklist.
+asset requirements: use primitive-shape concept image generated in this thread and editable primitive diagrams. No unofficial UMA logo recreation.
+known constraints: ChatGPT gratuito / sin suscripcion; no assets externos, DOTween, Cinemachine, ScriptableObjects or new Input System unless explicitly requested.
