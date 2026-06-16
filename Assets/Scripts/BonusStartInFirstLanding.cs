@@ -14,7 +14,7 @@ public class BonusStartInFirstLanding : MonoBehaviour
     private void Reset()
     {
         if (controller == null)
-            controller = FindFirstObjectByType<BonusSDC>();
+            controller = FindAnyObjectByType<BonusSDC>();
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -12,7 +12,7 @@ public class BonusFailZone : MonoBehaviour
         col.isTrigger = true;
 
         if (endController == null)
-            endController = FindFirstObjectByType<BonusEndController>();
+            endController = FindAnyObjectByType<BonusEndController>();
     }
 
     private void OnTriggerEnter(Collider other)

@@ -221,10 +221,10 @@ public class LevelPlaybackTester : MonoBehaviour
             playerVisualAnimatorBridge = playerTransform.GetComponent<PlayerVisualAnimatorBridge>();
 
         if (goalController == null)
-            goalController = FindObjectOfType<BuildingGoalController>();
+            goalController = FindAnyObjectByType<BuildingGoalController>();
 
         if (phaseManager == null)
-            phaseManager = FindObjectOfType<PhaseManager>();
+            phaseManager = FindAnyObjectByType<PhaseManager>();
 
         return true;
     }
@@ -233,7 +233,7 @@ public class LevelPlaybackTester : MonoBehaviour
     {
         routePoints.Clear();
 
-        BuildingTimeController[] allBuildings = FindObjectsOfType<BuildingTimeController>();
+        BuildingTimeController[] allBuildings = FindObjectsByType<BuildingTimeController>();
         List<BuildingTimeController> pending = new List<BuildingTimeController>();
 
         for (int i = 0; i < allBuildings.Length; i++)
@@ -712,7 +712,7 @@ public class LevelPlaybackTester : MonoBehaviour
             playerTransform = playerJump.transform;
 
         if (goalController == null)
-            goalController = FindObjectOfType<BuildingGoalController>();
+            goalController = FindAnyObjectByType<BuildingGoalController>();
 
         return playerTransform != null;
     }

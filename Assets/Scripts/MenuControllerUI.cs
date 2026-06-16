@@ -183,6 +183,8 @@ public sealed class MenuControllerUI : MonoBehaviour
 
             case "CONTROLS":
             case "CONTROLES":
+            case "OPTIONS":
+            case "OPCIONES":
                 panelsUI.OpenControls();
                 return true;
 

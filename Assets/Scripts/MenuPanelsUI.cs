@@ -14,6 +14,7 @@ public sealed class MenuPanelsUI : MonoBehaviour
     [SerializeField] private GameObject menuOptionsRoot;
     [SerializeField] private GameObject controlsPanel;
     [SerializeField] private GameObject creditsPanel;
+    [SerializeField] private GameObject playerToHide;
 
     [Header("Panel Buttons")]
     [SerializeField] private Button controlsCloseButton;
@@ -37,6 +38,8 @@ public sealed class MenuPanelsUI : MonoBehaviour
 
     private Coroutine _musicToggleRevealRoutine;
     private float _lastMenuOptionSfxTime;
+    private bool _playerWasActiveBeforePanel;
+    private bool _playerHiddenByPanel;
 
     private void Awake()
     {
@@ -115,6 +118,7 @@ public sealed class MenuPanelsUI : MonoBehaviour
         if (menuOptionsRoot != null)
             menuOptionsRoot.SetActive(true);
 
+        RestorePlayerVisibility();
         ScheduleMusicToggleReveal();
     }
 
@@ -139,9 +143,52 @@ public sealed class MenuPanelsUI : MonoBehaviour
 
         StopMusicToggleReveal();
         SetMusicToggleVisible(false);
+        HidePlayerForPanel();
 
         if (panelToShow != null)
             panelToShow.SetActive(true);
+    }
+
+    private void HidePlayerForPanel()
+    {
+        GameObject player = GetPlayerToHide();
+
+        if (player == null)
+            return;
+
+        if (!_playerHiddenByPanel)
+        {
+            _playerWasActiveBeforePanel = player.activeSelf;
+            _playerHiddenByPanel = true;
+        }
+
+        player.SetActive(false);
+    }
+
+    private void RestorePlayerVisibility()
+    {
+        if (!_playerHiddenByPanel)
+            return;
+
+        GameObject player = GetPlayerToHide();
+
+        if (player != null)
+            player.SetActive(_playerWasActiveBeforePanel);
+
+        _playerHiddenByPanel = false;
+    }
+
+    private GameObject GetPlayerToHide()
+    {
+        if (playerToHide != null)
+            return playerToHide;
+
+        playerToHide = GameObject.Find("Player");
+
+        if (playerToHide == null)
+            playerToHide = GameObject.FindGameObjectWithTag("Player");
+
+        return playerToHide;
     }
 
     private void PrepareMusicToggleReveal()

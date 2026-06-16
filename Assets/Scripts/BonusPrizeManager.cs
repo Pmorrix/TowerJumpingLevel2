@@ -74,7 +74,7 @@ public class BonusPrizeManager : MonoBehaviour
             scoreManager = FindAnyObjectByType<ScoreManager>();
 
         if (comboUI == null)
-            comboUI = FindFirstObjectByType<ComboUIController>(FindObjectsInactive.Include);
+            comboUI = FindAnyObjectByType<ComboUIController>(FindObjectsInactive.Include);
 
         if (disableTimeScoreInBonus)
         {
